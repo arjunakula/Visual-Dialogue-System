@@ -1,0 +1,188 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Scores))
+      (PP (IN of)
+        (NP (NNS properties))))
+    (VP (VBP are)
+      (PP (IN under)
+        (NP (JJ extreme) (NN fire) (NN threat)))
+      (SBAR (IN as)
+        (S
+          (NP (DT a) (JJ huge) (NN blaze))
+          (VP (VBZ continues)
+            (S
+              (VP (TO to)
+                (VP (VB advance)
+                  (PP (IN through)
+                    (NP
+                      (NP (NNP Sydney) (POS 's))
+                      (JJ north-western) (NNS suburbs))))))))))
+    (. .)))
+
+nsubj(are-4, Scores-1)
+prep_of(Scores-1, properties-3)
+root(ROOT-0, are-4)
+amod(threat-8, extreme-6)
+nn(threat-8, fire-7)
+prep_under(are-4, threat-8)
+mark(continues-13, as-9)
+det(blaze-12, a-10)
+amod(blaze-12, huge-11)
+nsubj(continues-13, blaze-12)
+xsubj(advance-15, blaze-12)
+advcl(are-4, continues-13)
+aux(advance-15, to-14)
+xcomp(continues-13, advance-15)
+poss(suburbs-20, Sydney-17)
+amod(suburbs-20, north-western-19)
+prep_through(advance-15, suburbs-20)
+
+(ROOT
+  (S
+    (NP (NNP Fires))
+    (VP (VBP have)
+      (ADVP (RB also))
+      (VP (VBN shut)
+        (PRT (RP down))
+        (NP
+          (NP (DT the) (JJ major) (NN road)
+            (CC and)
+            (NN rail) (NNS links))
+          (PP (IN between)
+            (NP (NNP Sydney)
+              (CC and)
+              (NNP Gosford))))))
+    (. .)))
+
+nsubj(shut-4, Fires-1)
+aux(shut-4, have-2)
+advmod(shut-4, also-3)
+root(ROOT-0, shut-4)
+prt(shut-4, down-5)
+det(road-8, the-6)
+amod(road-8, major-7)
+dobj(shut-4, road-8)
+nn(links-11, rail-10)
+dobj(shut-4, links-11)
+conj_and(road-8, links-11)
+prep_between(road-8, Sydney-13)
+prep_between(road-8, Gosford-15)
+conj_and(Sydney-13, Gosford-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ promotional) (NN stop))
+      (PP (IN in)
+        (NP (NNP Sydney))))
+    (VP (VBD was)
+      (NP (NN everything)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN expected)
+                (PP (IN for)
+                  (NP
+                    (NP (DT a) (NNP Hollywood) (NN blockbuster))
+                    (: -)
+                    (NP
+                      (NP (NNS phalanxes))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS photographers))
+                          (, ,)
+                          (NP (DT a) (NN stretch) (NN limo)))))))
+                (PP
+                  (PP (TO to)
+                    (NP
+                      (NP (DT a) (NN hotel))
+                      (PP (IN across)
+                        (NP (DT the) (NNP Quay)))))
+                  (: -)
+                  (CC but)
+                  (PP (IN with)
+                    (NP (CD one) (NN difference))))))))))
+    (. .)))
+
+det(stop-3, The-1)
+amod(stop-3, promotional-2)
+nsubj(everything-7, stop-3)
+prep_in(stop-3, Sydney-5)
+cop(everything-7, was-6)
+root(ROOT-0, everything-7)
+aux(expected-10, to-8)
+auxpass(expected-10, be-9)
+infmod(everything-7, expected-10)
+infmod(everything-7, expected-10')
+conj_but(expected-10, expected-10')
+det(blockbuster-14, a-12)
+nn(blockbuster-14, Hollywood-13)
+prep_for(expected-10, blockbuster-14)
+dep(blockbuster-14, phalanxes-16)
+prep_of(phalanxes-16, photographers-18)
+det(limo-22, a-20)
+nn(limo-22, stretch-21)
+appos(photographers-18, limo-22)
+det(hotel-25, a-24)
+prep_to(expected-10, hotel-25)
+det(Quay-28, the-27)
+prep_across(hotel-25, Quay-28)
+num(difference-33, one-32)
+prep_with(expected-10', difference-33)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN line-up))
+      (PP (IN of)
+        (NP (NNS masseurs))))
+    (VP (VBD was)
+      (VP (VBG waiting)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (DT the) (NNS media))
+              (PP (IN in)
+                (NP (NN hand))))))))
+    (. .)))
+
+det(line-up-2, A-1)
+nsubj(waiting-6, line-up-2)
+xsubj(take-8, line-up-2)
+prep_of(line-up-2, masseurs-4)
+aux(waiting-6, was-5)
+root(ROOT-0, waiting-6)
+aux(take-8, to-7)
+xcomp(waiting-6, take-8)
+det(media-10, the-9)
+dobj(take-8, media-10)
+prep_in(take-8, hand-12)
+
+(ROOT
+  (S
+    (NP (NNP Never))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (NN term))
+        (SBAR
+          (S (`` ``)
+            (S
+              (VP (VBG massaging)
+                (NP (DT the) (NNS media))))
+            ('' '')
+            (VP (VBD seemed)
+              (ADJP (RB so) (JJ accurate)))))))
+    (. .)))
+
+nsubj(has-2, Never-1)
+root(ROOT-0, has-2)
+det(term-4, the-3)
+dobj(has-2, term-4)
+csubj(accurate-12, massaging-6)
+det(media-8, the-7)
+dobj(massaging-6, media-8)
+cop(accurate-12, seemed-10)
+advmod(accurate-12, so-11)
+rcmod(term-4, accurate-12)
+

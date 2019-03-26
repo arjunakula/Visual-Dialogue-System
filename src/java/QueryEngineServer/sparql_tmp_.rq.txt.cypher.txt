@@ -1,0 +1,1 @@
+MATCH (hat105004:HasHat), (hat105004)-[:AGENT]->(who105001) RETURN distinct who105001, hat105004

@@ -1,0 +1,1 @@
+root(ROOT-0,msee:event) det(msee:object,msee:det) amod(msee:object,msee:direction) dobj(msee:event,msee:object) det(msee:object,msee:det) prep_to(msee:event,msee:object)

@@ -1,0 +1,54 @@
+<root name="S">
+  <node name="Root">
+    <node name="RootEvent">
+      <node name="RootP(ROOT-0,msee:event)">
+        <node name="RootS(ROOT-0,msee:event)">
+          <node name="RootSPos(ROOT-0,msee:event)">
+            <node name="root(ROOT-0,msee:event)"/>
+          </node>
+        </node>
+        <node name="Object(msee:event,msee:object)">
+          <node name="Det(msee:object,msee:det)">
+            <node name="DetPos(msee:object,msee:det)">
+              <node name="det(msee:object,msee:det)"/>
+            </node>
+          </node>
+          <node name="Amod(msee:object,msee:null)">
+            <node name="Amod_S(msee:object,msee:null)">
+              <node name="Amod_S(msee:object,msee:direction)">
+                <node name="AmodPos(msee:object,msee:direction)">
+                  <node name="amod(msee:object,msee:direction)"/>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node name="Object_S(msee:event,msee:object)">
+            <node name="Dobj(msee:event,msee:object)">
+              <node name="DobjPos(msee:event,msee:object)">
+                <node name="dobj(msee:event,msee:object)"/>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node name="Preposition_P(msee:null,msee:null)">
+          <node name="Preposition(msee:null,msee:null)">
+            <node name="Preposition(msee:event,msee:object)">
+              <node name="Det(msee:object,msee:det)">
+                <node name="DetPos(msee:object,msee:det)">
+                  <node name="det(msee:object,msee:det)"/>
+                </node>
+              </node>
+              <node name="Preposition_S(msee:event,msee:object)">
+                <node name="Prep_to(msee:event,msee:object)">
+                  <node name="Prep_toPos(msee:event,msee:object)">
+                    <node name="prep_to(msee:event,msee:object)"/>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</root>

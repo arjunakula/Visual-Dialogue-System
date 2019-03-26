@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src-examples"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/jena-arq-2.9.0-incubating/lib/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/junit/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="/jena-arq-2.9.0-incubating/lib/jena-iri-0.9.0-incubating.jar"/>
+	<classpathentry kind="lib" path="/jena-arq-2.9.0-incubating/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/jena-arq-2.9.0-incubating/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/jena-arq-2.9.0-incubating/lib/icu4j-3.4.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

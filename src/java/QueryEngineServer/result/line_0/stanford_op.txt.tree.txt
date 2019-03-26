@@ -1,0 +1,5 @@
+(ROOT [63.054]
+  (VP [53.435] (VBN Fold)
+    (NP [23.061] (DT the) (JJ right) (NN sleeve))
+    (PP [15.320] (TO to)
+      (NP [12.851] (DT the) (NN left)))))

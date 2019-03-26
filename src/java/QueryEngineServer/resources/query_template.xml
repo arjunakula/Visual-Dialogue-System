@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<Query id="query-1" version="1.0" xmlns="http://www.siginnovations.com/MSEE">
+	<NaturalLanguage>natural_language</NaturalLanguage>
+	<Locations>all_locations</Locations>
+</Query>

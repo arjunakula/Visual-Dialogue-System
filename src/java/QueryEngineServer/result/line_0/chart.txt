@@ -1,0 +1,1331 @@
+Earley chart for = (root(ROOT-0,msee:event) det(msee:object,msee:det) amod(msee:object,msee:direction) dobj(msee:event,msee:object) det(msee:object,msee:det) prep_to(msee:event,msee:object))
+CHART==============0
+@ ->. S                              [0,0]   0    []                Dummy Start State
+S ->. Root                           [0,0]   1    []                Predictor
+Root ->. RootBe                      [0,0]   2    []                Predictor
+Root ->. RootCopula                  [0,0]   3    []                Predictor
+Root ->. RootEvent                   [0,0]   4    []                Predictor
+Root ->. RootLocation                [0,0]   5    []                Predictor
+Root ->. RootQuery                   [0,0]   6    []                Predictor
+RootBe ->. Expletive(msee:aux,msee:expletive) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) [0,0]   7    []Predictor
+RootBe ->. Expletive(msee:aux,msee:expletive) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) Location(msee:object,msee:location) [0,0]   8    []Predictor
+RootBe ->. Expletive(msee:aux,msee:expletive) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) Location(msee:object,msee:location) ParticipialModifier(msee:object,msee:event) [0,0]   9    []Predictor
+RootBe ->. Expletive(msee:aux,msee:expletive) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) ParticipialModifier(msee:object,msee:event) [0,0]   10    []Predictor
+RootBe ->. Expletive(msee:aux,msee:expletive) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) ParticipialModifier(msee:object,msee:event) Location(msee:event,msee:location) [0,0]   11    []Predictor
+RootCopula ->. Subject(msee:aux,msee:object) RootP(ROOT-0,msee:aux) Prep_in(msee:aux,msee:fluent) [0,0]   12    []Predictor
+RootCopula ->. Subject(msee:aux,msee:object) RootP(ROOT-0,msee:aux) Prep_with(msee:aux,msee:object) [0,0]   13    []Predictor
+RootCopula ->. Det(msee:human,msee:det) Subject(msee:hummanattr,msee:human) Copula(msee:hummanattr,msee:aux) RootP(ROOT-0,msee:hummanattr) [0,0]   14    []Predictor
+RootCopula ->. Subject(msee:hummanattr,msee:human) Copula(msee:hummanattr,msee:aux) RootP(ROOT-0,msee:hummanattr) [0,0]   15    []Predictor
+RootCopula ->. Subject(msee:hummanattr,msee:hummanattr_2) Copula(msee:hummanattr,msee:aux) RootP(ROOT-0,msee:hummanattr) [0,0]   16    []Predictor
+RootCopula ->. Subject(msee:yearold,msee:human) Copula(msee:yearold,msee:aux) Npadvmod(msee:yearold,msee:number) RootP(ROOT-0,msee:yearold) [0,0]   17    []Predictor
+RootCopula ->. Subject(msee:event,msee:object) Copula(msee:event,msee:aux) RootP(ROOT-0,msee:event) [0,0]   18    []Predictor
+RootCopula ->. Subject(msee:fluent,msee:object) Copula(msee:fluent,msee:aux) RootP(ROOT-0,msee:fluent) [0,0]   19    []Predictor
+RootCopula ->. Subject(msee:fluent,msee:object) AuxPassive(msee:fluent,msee:aux) RootP(ROOT-0,msee:fluent) [0,0]   20    []Predictor
+RootCopula ->. Subject(msee:objectattr,msee:object) Copula(msee:objectattr,msee:aux) RootP(ROOT-0,msee:objectattr) [0,0]   21    []Predictor
+RootEvent ->. Advmod(msee:event,msee:manner) RootP(ROOT-0,msee:event) [0,0]   22    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   23    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) Conj_andP(msee:event,msee:event) [0,0]   24    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) Conj_andP(msee:event,msee:event) PurposeClause(msee:event1,msee:event2) [0,0]   25    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) Conj_andP(msee:event,msee:event) Conj_andP(msee:event,msee:event) [0,0]   26    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) PurposeClause(msee:event1,msee:event2) [0,0]   27    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) Conj_andP(msee:event,msee:event) [0,0]   28    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) Conj_andP(msee:event,msee:event) PurposeClause(msee:event1,msee:event2) [0,0]   29    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) OpenClause(msee:event1,msee:event2) [0,0]   30    []Predictor
+RootEvent ->. AgentP(msee:event,msee:object) RootP(ROOT-0,msee:event) PurposeClause(msee:event1,msee:event2) [0,0]   31    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   32    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Agent(msee:event,msee:object) Conj_andP(msee:event,msee:event) [0,0]   33    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Destination(msee:event,msee:location) [0,0]   34    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Location(msee:event,msee:location) [0,0]   35    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Location(msee:event,msee:location) ParticipialModifier(msee:object,msee:event) [0,0]   36    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) [0,0]   37    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) Location(msee:event,msee:location) [0,0]   38    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) Prt(msee:event,msee:fluent) [0,0]   39    []Predictor
+RootEvent ->. Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) Prt(msee:event,msee:prep) [0,0]   40    []Predictor
+RootEvent ->. NounCompound(msee:object,msee:event) RootP(ROOT-0,msee:object) [0,0]   41    []Predictor
+RootEvent ->. RootP(ROOT-0,msee:event) [0,0]   42    []             Predictor
+RootLocation ->. Subject(msee:aux,msee:object) RootP(ROOT-0,msee:aux) Location(msee:aux,msee:location) [0,0]   43    []Predictor
+RootQuery ->. RootIf                 [0,0]   44    []               Predictor
+RootQuery ->. RootWhat               [0,0]   45    []               Predictor
+RootQuery ->. RootWhen               [0,0]   46    []               Predictor
+RootQuery ->. RootWhere              [0,0]   47    []               Predictor
+RootQuery ->. RootWho                [0,0]   48    []               Predictor
+RootQuery ->. RootWhy                [0,0]   49    []               Predictor
+RootQuery ->. RootHow                [0,0]   50    []               Predictor
+Expletive(msee:aux,msee:expletive) ->. ExplPos(msee:aux,msee:expletive) [0,0]   51    []Predictor
+Subject(msee:aux,msee:object) ->. Det(msee:object,msee:det) Nsubj(msee:aux,msee:object) [0,0]   52    []Predictor
+Subject(msee:aux,msee:object) ->. Nsubj(msee:aux,msee:object) [0,0]   53    []Predictor
+Subject(msee:aux,msee:object) ->. Num(msee:object,msee:number) Nsubj(msee:aux,msee:object) [0,0]   54    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [0,0]   55    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [0,0]   56    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [0,0]   57    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [0,0]   58    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [0,0]   59    []Predictor
+Subject(msee:hummanattr,msee:human) ->. Amod(msee:human,msee:direction) Subject(msee:human1,msee:human2) [0,0]   60    []Predictor
+Subject(msee:hummanattr,msee:human) ->. Subject(msee:human1,msee:human2) [0,0]   61    []Predictor
+Subject(msee:hummanattr,msee:human) ->. Subject(msee:occupation,msee:human) [0,0]   62    []Predictor
+Subject(msee:hummanattr,msee:human) ->. Subject(msee:race,msee:human) [0,0]   63    []Predictor
+Subject(msee:hummanattr,msee:human) ->. Subject(msee:religion,msee:human) [0,0]   64    []Predictor
+Subject(msee:yearold,msee:human) ->. Det(msee:human,msee:det) Nsubj(msee:yearold,msee:human) [0,0]   65    []Predictor
+Subject(msee:event,msee:object) ->. Agent(msee:event,msee:object) [0,0]   66    []Predictor
+Subject(msee:fluent,msee:object) ->. Nsubj(msee:fluent,msee:object) [0,0]   67    []Predictor
+Subject(msee:fluent,msee:object) ->. Det(msee:object,msee:det) Nsubj(msee:fluent,msee:object) [0,0]   68    []Predictor
+Subject(msee:objectattr,msee:object) ->. Det(msee:object,msee:det) Nsubj(msee:objectattr,msee:object) [0,0]   69    []Predictor
+Subject(msee:objectattr,msee:object) ->. Nsubj(msee:objectattr,msee:object) [0,0]   70    []Predictor
+Advmod(msee:event,msee:manner) ->. AdvmodPos(msee:event,msee:manner) [0,0]   71    []Predictor
+AgentP(msee:event,msee:object) ->. Agent(msee:event,msee:object) [0,0]   72    []Predictor
+AgentP(msee:event,msee:object) ->. Agent(msee:event,msee:object) Agent(msee:event,msee:object) [0,0]   73    []Predictor
+AgentP(msee:event,msee:object) ->. Agent(msee:event,msee:object) Agent(msee:event,msee:object) Agent(msee:event,msee:object) [0,0]   74    []Predictor
+Agent(msee:event,msee:object) ->. PremodNsubj(msee:event,msee:object) Nsubj(msee:event,msee:object) [0,0]   75    []Predictor
+Agent(msee:event,msee:object) ->. PremodNsubj(msee:event,msee:object) Nsubj(msee:event,msee:object) PostmodNsubj(msee:event,msee:object) [0,0]   76    []Predictor
+Agent(msee:event,msee:object) ->. Nsubj(msee:event,msee:object) [0,0]   77    []Predictor
+Agent(msee:event,msee:object) ->. Nsubj(msee:event,msee:object) PostmodNsubj(msee:event,msee:object) [0,0]   78    []Predictor
+NounCompound(msee:object,msee:event) ->. NnPos(msee:object,msee:event) [0,0]   79    []Predictor
+RootP(ROOT-0,msee:event) ->. Aux(msee:event,msee:aux) RootP(ROOT-0,msee:event) [0,0]   80    []Predictor
+RootP(ROOT-0,msee:event) ->. Aux(msee:event,msee:prep) RootP(ROOT-0,msee:event) [0,0]   81    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) [0,0]   82    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Advmod(msee:event,msee:manner) [0,0]   83    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Object(msee:event,msee:object) [0,0]   84    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null) [0,0]   85    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Preposition_P(msee:null,msee:null) [0,0]   86    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Prt(msee:event,msee:fluent) [0,0]   87    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Prt(msee:event,msee:prep) Object(msee:event,msee:object) [0,0]   88    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Prt(msee:event,msee:prep) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null) [0,0]   89    []Predictor
+RootP(ROOT-0,msee:event) ->. RootS(ROOT-0,msee:event) Prt(msee:event,msee:prep) [0,0]   90    []Predictor
+RootIf ->. Copula(msee:fluent,msee:aux) Subject(msee:fluent,msee:object) RootP(ROOT-0,msee:fluent) [0,0]   91    []Predictor
+RootWhat ->. RootWhatEvent           [0,0]   92    []               Predictor
+RootWhat ->. RootWhatObject          [0,0]   93    []               Predictor
+RootWhat ->. RootWhatHuman           [0,0]   94    []               Predictor
+RootWhat ->. RootWhatPatient         [0,0]   95    []               Predictor
+RootWhen ->. Advmod(msee:event,msee:when) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   96    []Predictor
+RootWhen ->. Advmod(msee:aux,msee:when) RootP(ROOT-0,msee:aux) NounCompound(msee:event,msee:object) Subject(msee:aux,msee:event) [0,0]   97    []Predictor
+RootWhere ->. Advmod(msee:aux,msee:where) RootP(ROOT-0,msee:aux) Subject(msee:aux,msee:object) [0,0]   98    []Predictor
+RootWhere ->. Advmod(msee:aux,msee:where) RootP(ROOT-0,msee:aux) NounCompound(msee:event,msee:humanname) Nsubj(msee:aux,msee:event) [0,0]   99    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   100    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) [0,0]   101    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) Prep(msee:event,msee:from) [0,0]   102    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) Prep(msee:event,msee:to) [0,0]   103    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) Prep(msee:event,msee:into) [0,0]   104    []Predictor
+RootWhere ->. Advmod(msee:event,msee:where) AuxPassive(msee:event,msee:aux) SubjectPassive(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   105    []Predictor
+RootWho ->. RootWhat                 [0,0]   106    []              Predictor
+RootWho ->. Agent(msee:event,msee:who) RootP(ROOT-0,msee:event) [0,0]   107    []Predictor
+RootWho ->. Agent(msee:event,msee:who) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) [0,0]   108    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Agent(msee:aux,msee:event) [0,0]   109    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Agent(msee:aux,msee:event) Location(msee:event,msee:location) [0,0]   110    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Agent(msee:aux,msee:event) Object(msee:object,msee:event) Location(msee:event,msee:location) [0,0]   111    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Location(msee:aux,msee:location) [0,0]   112    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Object(msee:object,msee:event) Nsubj(msee:aux,msee:object) [0,0]   113    []Predictor
+RootWho ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Object(msee:object,msee:event) Nsubj(msee:aux,msee:object) Location(msee:object,msee:location) [0,0]   114    []Predictor
+RootWhy ->. Advmod(msee:event,msee:why) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   115    []Predictor
+RootWhy ->. Advmod(msee:event,msee:why) Aux(msee:event,msee:aux) Subject(msee:event,msee:object) RootP(ROOT-0,msee:event) Object(msee:event,msee:object) [0,0]   116    []Predictor
+RootWhy ->. Advmod(msee:fluent,msee:why) Copula(msee:fluent,msee:aux) Nsubj(msee:fluent,msee:object) RootS(ROOT-0,msee:fluent) [0,0]   117    []Predictor
+RootHow ->. Dep(msee:event,msee:how) Aux(msee:event,msee:prep) RootP(ROOT-0,msee:event) [0,0]   118    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [0,0]   119    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [0,0]   120    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [0,0]   121    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [0,0]   122    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [0,0]   123    []Predictor
+Nsubj(msee:aux,msee:object) ->. Nsubj(msee:aux,msee:human) [0,0]   124    []Predictor
+Nsubj(msee:aux,msee:object) ->. Nsubj(msee:aux,msee:humanname) [0,0]   125    []Predictor
+Nsubj(msee:aux,msee:object) ->. NsubjPos(msee:aux,msee:object) [0,0]   126    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [0,0]   127    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [0,0]   128    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [0,0]   129    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [0,0]   130    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [0,0]   131    []Predictor
+Amod(msee:human,msee:direction) ->. AmodPos(msee:human,msee:direction) [0,0]   132    []Predictor
+Subject(msee:human1,msee:human2) ->. Nsubj(msee:human1,msee:human2) [0,0]   133    []Predictor
+Subject(msee:occupation,msee:human) ->. Det(msee:human,msee:det) Nsubj(msee:occupation,msee:human) [0,0]   134    []Predictor
+Subject(msee:occupation,msee:human) ->. Nsubj(msee:occupation,msee:human) [0,0]   135    []Predictor
+Subject(msee:race,msee:human) ->. Det(msee:human,msee:det) Nsubj(msee:race,msee:human) [0,0]   136    []Predictor
+Subject(msee:race,msee:human) ->. Nsubj(msee:race,msee:human) [0,0]   137    []Predictor
+Subject(msee:religion,msee:human) ->. Det(msee:human,msee:det) Nsubj(msee:religion,msee:human) [0,0]   138    []Predictor
+Subject(msee:religion,msee:human) ->. Nsubj(msee:religion,msee:human) [0,0]   139    []Predictor
+Nsubj(msee:fluent,msee:object) ->. Nsubj(msee:fluent,msee:human) [0,0]   140    []Predictor
+Nsubj(msee:fluent,msee:object) ->. Nsubj(msee:fluent,msee:humanname) [0,0]   141    []Predictor
+Nsubj(msee:fluent,msee:object) ->. Nsubjpass(msee:fluent,msee:object) [0,0]   142    []Predictor
+Nsubj(msee:fluent,msee:object) ->. NsubjPos(msee:fluent,msee:object) [0,0]   143    []Predictor
+Nsubj(msee:objectattr,msee:object) ->. Nsubj(msee:color,msee:object) [0,0]   144    []Predictor
+Nsubj(msee:objectattr,msee:object) ->. Nsubj(msee:size,msee:object) [0,0]   145    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Det(msee:object,msee:det) [0,0]   146    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Det(msee:object,msee:det) Size(msee:object,msee:size) [0,0]   147    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Det(msee:object,msee:det) Num(msee:object,msee:number) [0,0]   148    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Det(msee:object,msee:det) Number(msee:yearold,msee:number) Amod(msee:human,msee:yearold) [0,0]   149    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Num(msee:object,msee:number) [0,0]   150    []Predictor
+PremodNsubj(msee:event,msee:object) ->. Size(msee:object,msee:size) [0,0]   151    []Predictor
+Nsubj(msee:event,msee:object) ->. Nsubj(msee:event,msee:human) [0,0]   152    []Predictor
+Nsubj(msee:event,msee:object) ->. Nsubj(msee:event,msee:humanname) [0,0]   153    []Predictor
+Nsubj(msee:event,msee:object) ->. NsubjPos(msee:event,msee:object) [0,0]   154    []Predictor
+Nsubj(msee:event,msee:object) ->. XsubjPos(msee:event,msee:object) [0,0]   155    []Predictor
+Aux(msee:event,msee:aux) ->. AuxPos(msee:event,msee:aux) [0,0]   156    []Predictor
+Aux(msee:event,msee:prep) ->. AuxPos(msee:event,msee:prep) [0,0]   157    []Predictor
+RootS(ROOT-0,msee:event) ->. RootSPos(ROOT-0,msee:event) [0,0]   158    []Predictor
+Copula(msee:fluent,msee:aux) ->. Advmod(msee:fluent,msee:manner) Cop(msee:fluent,msee:aux) [0,0]   159    []Predictor
+Copula(msee:fluent,msee:aux) ->. Cop(msee:fluent,msee:aux) Advmod(msee:fluent,msee:manner) [0,0]   160    []Predictor
+Copula(msee:fluent,msee:aux) ->. Cop(msee:fluent,msee:aux) [0,0]   161    []Predictor
+RootWhatEvent ->. Object(msee:eventdo,msee:what) Aux(msee:eventdo,msee:aux) Subject(msee:eventdo,msee:object) RootP(ROOT-0,msee:eventdo) [0,0]   162    []Predictor
+RootWhatEvent ->. Object(msee:eventdo,msee:what) Aux(msee:eventdo,msee:aux) Subject(msee:eventdo,msee:object) RootP(ROOT-0,msee:eventdo) Location(msee:eventdo,msee:location) [0,0]   163    []Predictor
+RootWhatObject ->. Attr(msee:aux,msee:what) RootP(ROOT-0,msee:aux) Det(msee:object,msee:det) Nsubj(msee:aux,msee:object) [0,0]   164    []Predictor
+RootWhatObject ->. Attr(msee:aux,msee:what) RootP(ROOT-0,msee:aux) Location(msee:aux,msee:location) [0,0]   165    []Predictor
+RootWhatHuman ->. Attr(msee:aux,msee:who) RootP(ROOT-0,msee:aux) Det(msee:object,msee:det) Nsubj(msee:aux,msee:object) [0,0]   166    []Predictor
+RootWhatPatient ->. Attr(msee:aux,msee:what) RootP(ROOT-0,msee:aux) NounCompound(msee:event,msee:humanname) Nsubj(msee:aux,msee:event) [0,0]   167    []Predictor
+RootWhatPatient ->. Object(msee:event,msee:what) Aux(msee:event,msee:aux) Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) [0,0]   168    []Predictor
+RootWhatPatient ->. Object(msee:event,msee:what) Aux(msee:event,msee:aux) Agent(msee:event,msee:object) RootP(ROOT-0,msee:event) Location(msee:event,msee:location) [0,0]   169    []Predictor
+RootWhatPatient ->. SubjectPassive(msee:event,msee:what) Aux(msee:event,msee:aux) AuxPassive(msee:event,msee:aux) RootP(ROOT-0,msee:event) [0,0]   170    []Predictor
+RootWhatPatient ->. SubjectPassive(msee:event,msee:what) AuxPassive(msee:event,msee:aux) RootP(ROOT-0,msee:event) [0,0]   171    []Predictor
+RootWhatPatient ->. SubjectPassive(msee:event,msee:what) AuxPassive(msee:event,msee:aux) RootP(ROOT-0,msee:event) Location(msee:event,msee:location) [0,0]   172    []Predictor
+Advmod(msee:event,msee:when) ->. AdvmodPos(msee:event,msee:when) [0,0]   173    []Predictor
+Advmod(msee:aux,msee:when) ->. AdvmodPos(msee:aux,msee:when) [0,0]   174    []Predictor
+Advmod(msee:aux,msee:where) ->. AdvmodPos(msee:aux,msee:where) [0,0]   175    []Predictor
+Advmod(msee:event,msee:where) ->. AdvmodPos(msee:event,msee:where) [0,0]   176    []Predictor
+Agent(msee:event,msee:who) ->. Nsubj(msee:event,msee:who) [0,0]   177    []Predictor
+Attr(msee:aux,msee:who) ->. AttrPos(msee:aux,msee:who) [0,0]   178    []Predictor
+Advmod(msee:event,msee:why) ->. AdvmodPos(msee:event,msee:why) [0,0]   179    []Predictor
+Advmod(msee:fluent,msee:why) ->. AdvmodPos(msee:fluent,msee:why) [0,0]   180    []Predictor
+Dep(msee:event,msee:how) ->. DepPos(msee:event,msee:how) [0,0]   181    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [0,0]   182    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [0,0]   183    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [0,0]   184    []Predictor
+Nsubj(msee:aux,msee:human) ->. NsubjPos(msee:aux,msee:human) [0,0]   185    []Predictor
+Nsubj(msee:aux,msee:human) ->. NsubjPos(msee:aux,msee:humanname) [0,0]   186    []Predictor
+Nsubj(msee:aux,msee:humanname) ->. NsubjPos(msee:aux,msee:humanname) [0,0]   187    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [0,0]   188    []Predictor
+Nsubj(msee:human1,msee:human2) ->. NsubjPos(msee:human1,msee:human2) [0,0]   189    []Predictor
+Nsubj(msee:occupation,msee:human) ->. NsubjPos(msee:occupation,msee:human) [0,0]   190    []Predictor
+Nsubj(msee:race,msee:human) ->. NsubjPos(msee:race,msee:human) [0,0]   191    []Predictor
+Nsubj(msee:religion,msee:human) ->. NsubjPos(msee:religion,msee:human) [0,0]   192    []Predictor
+Nsubj(msee:fluent,msee:human) ->. NsubjPos(msee:fluent,msee:human) [0,0]   193    []Predictor
+Nsubj(msee:fluent,msee:humanname) ->. NsubjPos(msee:fluent,msee:humanname) [0,0]   194    []Predictor
+Nsubjpass(msee:fluent,msee:object) ->. NsubjpassPos(msee:fluent,msee:object) [0,0]   195    []Predictor
+Nsubj(msee:color,msee:object) ->. NsubjPos(msee:color,msee:object) [0,0]   196    []Predictor
+Nsubj(msee:size,msee:object) ->. NsubjPos(msee:size,msee:object) [0,0]   197    []Predictor
+Size(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [0,0]   198    []Predictor
+Nsubj(msee:event,msee:human) ->. Dep(msee:event,msee:human) [0,0]   199    []Predictor
+Nsubj(msee:event,msee:human) ->. NsubjPos(msee:event,msee:human) [0,0]   200    []Predictor
+Nsubj(msee:event,msee:human) ->. Nsubj(msee:event,msee:occupation) [0,0]   201    []Predictor
+Nsubj(msee:event,msee:human) ->. XsubjPos(msee:event,msee:human) [0,0]   202    []Predictor
+Nsubj(msee:event,msee:humanname) ->. NsubjPos(msee:event,msee:humanname) [0,0]   203    []Predictor
+Nsubj(msee:event,msee:humanname) ->. XsubjPos(msee:event,msee:humanname) [0,0]   204    []Predictor
+Advmod(msee:fluent,msee:manner) ->. AdvmodPos(msee:fluent,msee:manner) [0,0]   205    []Predictor
+Cop(msee:fluent,msee:aux) ->. CopPos(msee:fluent,msee:aux) [0,0]   206    []Predictor
+Object(msee:eventdo,msee:what) ->. Dobj(msee:eventdo,msee:what) [0,0]   207    []Predictor
+Attr(msee:aux,msee:what) ->. AttrPos(msee:aux,msee:what) [0,0]   208    []Predictor
+Object(msee:event,msee:what) ->. Dobj(msee:event,msee:what) [0,0]   209    []Predictor
+SubjectPassive(msee:event,msee:what) ->. NsubjPass(msee:event,msee:what) [0,0]   210    []Predictor
+Nsubj(msee:event,msee:who) ->. NsubjPos(msee:event,msee:who) [0,0]   211    []Predictor
+Dep(msee:event,msee:human) ->. DepPos(msee:event,msee:human) [0,0]   212    []Predictor
+Nsubj(msee:event,msee:occupation) ->. NsubjPos(msee:event,msee:occupation) [0,0]   213    []Predictor
+Nsubj(msee:event,msee:occupation) ->. XsubjPos(msee:event,msee:occupation) [0,0]   214    []Predictor
+Dobj(msee:eventdo,msee:what) ->. DobjPos(msee:eventdo,msee:what) [0,0]   215    []Predictor
+Dobj(msee:event,msee:what) ->. DobjPos(msee:event,msee:what) [0,0]   216    []Predictor
+NsubjPass(msee:event,msee:what) ->. NsubjPassPos(msee:event,msee:what) [0,0]   217    []Predictor
+CHART==============1
+RootSPos(ROOT-0,msee:event) -> root(ROOT-0,msee:event). [0,1]   218    []Scanner
+RootS(ROOT-0,msee:event) -> RootSPos(ROOT-0,msee:event). [0,1]   219    [S218]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). [0,1]   220    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Advmod(msee:event,msee:manner) [0,1]   221    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Object(msee:event,msee:object) [0,1]   222    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Object(msee:event,msee:object) Preposition_P(msee:null,msee:null) [0,1]   223    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Preposition_P(msee:null,msee:null) [0,1]   224    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Prt(msee:event,msee:fluent) [0,1]   225    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Prt(msee:event,msee:prep) Object(msee:event,msee:object) [0,1]   226    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Prt(msee:event,msee:prep) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null) [0,1]   227    [S219]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event). Prt(msee:event,msee:prep) [0,1]   228    [S219]Completer
+RootEvent -> RootP(ROOT-0,msee:event). [0,1]   229    [S220]        Completer
+Advmod(msee:event,msee:manner) ->. AdvmodPos(msee:event,msee:manner) [1,1]   230    []Predictor
+Object(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Object_S(msee:event,msee:object) [1,1]   231    []Predictor
+Object(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:manner) Object_S(msee:event,msee:object) [1,1]   232    []Predictor
+Object(msee:event,msee:object) ->. Det(msee:object,msee:det) Num(msee:object,msee:number) Object_S(msee:event,msee:object) [1,1]   233    []Predictor
+Object(msee:event,msee:object) ->. Det(msee:object,msee:det) Object_S(msee:event,msee:object) [1,1]   234    []Predictor
+Object(msee:event,msee:object) ->. Det(msee:object,msee:det) Object_S(msee:event,msee:object) Preposition(msee:object1,msee:object2) [1,1]   235    []Predictor
+Object(msee:event,msee:object) ->. Amod(msee:object,msee:null) Object_S(msee:event,msee:object) [1,1]   236    []Predictor
+Object(msee:event,msee:object) ->. Num(msee:object,msee:number) Object_S(msee:event,msee:object) [1,1]   237    []Predictor
+Object(msee:event,msee:object) ->. Object_S(msee:event,msee:object) [1,1]   238    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) [1,1]   239    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [1,1]   240    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [1,1]   241    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [1,1]   242    []Predictor
+Prt(msee:event,msee:fluent) ->. PrtPos(msee:event,msee:fluent) [1,1]   243    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [1,1]   244    []Predictor
+Root -> RootEvent.                   [0,1]   245    [S229]          Completer
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [1,1]   246    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [1,1]   247    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [1,1]   248    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [1,1]   249    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [1,1]   250    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) [1,1]   251    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [1,1]   252    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [1,1]   253    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [1,1]   254    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [1,1]   255    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:object) [1,1]   256    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:task) [1,1]   257    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:null) [1,1]   258    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:object) [1,1]   259    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:human,msee:object) [1,1]   260    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object1,msee:object2) [1,1]   261    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object,msee:human) [1,1]   262    []Predictor
+S -> Root.                           [0,1]   263    [S245]          Completer
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [1,1]   264    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [1,1]   265    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [1,1]   266    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [1,1]   267    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [1,1]   268    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [1,1]   269    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [1,1]   270    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [1,1]   271    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [1,1]   272    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [1,1]   273    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [1,1]   274    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [1,1]   275    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [1,1]   276    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [1,1]   277    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [1,1]   278    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:human) [1,1]   279    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:location) [1,1]   280    []Predictor
+Dobj(msee:event,msee:object) ->. DobjPos(msee:event,msee:object) [1,1]   281    []Predictor
+Dobj(msee:event,msee:task) ->. DobjPos(msee:event,msee:task) [1,1]   282    []Predictor
+Preposition(msee:event,msee:null) ->. Advmod(msee:event,msee:direction) [1,1]   283    []Predictor
+Preposition(msee:event,msee:null) ->. Acomp(msee:event,msee:direction) [1,1]   284    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_from(msee:event,msee:direction) [1,1]   285    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_to(msee:event,msee:direction) [1,1]   286    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) [1,1]   287    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) Prep_to(msee:event,msee:direction) [1,1]   288    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_to(msee:event,msee:direction) [1,1]   289    []Predictor
+Preposition(msee:event,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [1,1]   290    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [1,1]   291    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Prep_by(msee:event,msee:object) [1,1]   292    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:event,msee:object) [1,1]   293    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [1,1]   294    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [1,1]   295    []Predictor
+Preposition(msee:event,msee:object) ->. Preposition_S(msee:event,msee:object) [1,1]   296    []Predictor
+Preposition(msee:human,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [1,1]   297    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [1,1]   298    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:human,msee:object) [1,1]   299    []Predictor
+Preposition(msee:human,msee:object) ->. Preposition_S(msee:human,msee:object) [1,1]   300    []Predictor
+Preposition(msee:object1,msee:object2) ->. Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [1,1]   301    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [1,1]   302    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Preposition_S(msee:object1,msee:object2) [1,1]   303    []Predictor
+Preposition(msee:object1,msee:object2) ->. Preposition_S(msee:object1,msee:object2) [1,1]   304    []Predictor
+@ -> S.                              [0,1]   305    [S263]          Completer
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [1,1]   306    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [1,1]   307    []Predictor
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [1,1]   308    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [1,1]   309    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [1,1]   310    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [1,1]   311    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [1,1]   312    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [1,1]   313    []Predictor
+Dobj(msee:event,msee:human) ->. DobjPos(msee:event,msee:human) [1,1]   314    []Predictor
+Dobj(msee:event,msee:location) ->. DobjPos(msee:event,msee:location) [1,1]   315    []Predictor
+Advmod(msee:event,msee:direction) ->. AdvmodPos(msee:event,msee:direction) [1,1]   316    []Predictor
+Acomp(msee:event,msee:direction) ->. AcompPos(msee:event,msee:direction) [1,1]   317    []Predictor
+Det(msee:direction,msee:det) ->. DetPos(msee:direction,msee:det) [1,1]   318    []Predictor
+Prep_from(msee:event,msee:direction) ->. Prep_fromPos(msee:event,msee:direction) [1,1]   319    []Predictor
+Prep_to(msee:event,msee:direction) ->. Prep_toPos(msee:event,msee:direction) [1,1]   320    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [1,1]   321    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [1,1]   322    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [1,1]   323    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [1,1]   324    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [1,1]   325    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [1,1]   326    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [1,1]   327    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [1,1]   328    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [1,1]   329    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [1,1]   330    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [1,1]   331    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [1,1]   332    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [1,1]   333    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [1,1]   334    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [1,1]   335    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [1,1]   336    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [1,1]   337    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [1,1]   338    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [1,1]   339    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [1,1]   340    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [1,1]   341    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [1,1]   342    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [1,1]   343    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [1,1]   344    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [1,1]   345    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [1,1]   346    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [1,1]   347    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [1,1]   348    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [1,1]   349    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [1,1]   350    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [1,1]   351    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [1,1]   352    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [1,1]   353    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [1,1]   354    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [1,1]   355    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [1,1]   356    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [1,1]   357    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [1,1]   358    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [1,1]   359    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [1,1]   360    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [1,1]   361    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [1,1]   362    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [1,1]   363    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [1,1]   364    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [1,1]   365    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [1,1]   366    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [1,1]   367    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [1,1]   368    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [1,1]   369    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [1,1]   370    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [1,1]   371    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [1,1]   372    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [1,1]   373    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [1,1]   374    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [1,1]   375    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [1,1]   376    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [1,1]   377    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [1,1]   378    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [1,1]   379    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [1,1]   380    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [1,1]   381    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [1,1]   382    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [1,1]   383    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [1,1]   384    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [1,1]   385    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [1,1]   386    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [1,1]   387    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [1,1]   388    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [1,1]   389    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [1,1]   390    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [1,1]   391    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [1,1]   392    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [1,1]   393    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [1,1]   394    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [1,1]   395    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [1,1]   396    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [1,1]   397    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [1,1]   398    []Predictor
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [1,1]   399    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [1,1]   400    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [1,1]   401    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [1,1]   402    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [1,1]   403    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [1,1]   404    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [1,1]   405    []Predictor
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [1,1]   406    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [1,1]   407    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [1,1]   408    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [1,1]   409    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [1,1]   410    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [1,1]   411    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [1,1]   412    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [1,1]   413    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [1,1]   414    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [1,1]   415    []Predictor
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [1,1]   416    []Predictor
+CHART==============2
+DetPos(msee:object,msee:det) -> det(msee:object,msee:det). [1,2]   417    []Scanner
+Det(msee:object,msee:det) -> DetPos(msee:object,msee:det). [1,2]   418    [S417]Completer
+Det(msee:location,msee:det) -> DetPos(msee:object,msee:det). [1,2]   419    [S417]Completer
+Prep_for(msee:event,msee:object) -> DetPos(msee:object,msee:det). Prep_for_S(msee:event,msee:object) [1,2]   420    [S417]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Object_S(msee:event,msee:object) [1,2]   421    [S418]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:manner) Object_S(msee:event,msee:object) [1,2]   422    [S418]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Object_S(msee:event,msee:object) [1,2]   423    [S418]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Object_S(msee:event,msee:object) [1,2]   424    [S418]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Object_S(msee:event,msee:object) Preposition(msee:object1,msee:object2) [1,2]   425    [S418]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [1,2]   426    [S418]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:event,msee:object) [1,2]   427    [S418]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [1,2]   428    [S418]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [1,2]   429    [S418]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:human,msee:object) [1,2]   430    [S418]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [1,2]   431    [S418]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Preposition_S(msee:object1,msee:object2) [1,2]   432    [S418]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [1,2]   433    [S418]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_above_S(msee:event,msee:object) [1,2]   434    [S418]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_across_S(msee:event,msee:object) [1,2]   435    [S418]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_around_S(msee:event,msee:object) [1,2]   436    [S418]Completer
+Prep_at(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_at_S(msee:event,msee:object) [1,2]   437    [S418]Completer
+Prep_away_from(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_away_from_S(msee:event,msee:object) [1,2]   438    [S418]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [1,2]   439    [S418]Completer
+Prep_on(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_onPos(msee:event,msee:object) [1,2]   440    [S418]Completer
+Prep_out_of(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_out_of_S(msee:event,msee:object) [1,2]   441    [S418]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_over_S(msee:event,msee:object) [1,2]   442    [S418]Completer
+Prep_towards(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_towards_S(msee:event,msee:object) [1,2]   443    [S418]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [1,2]   444    [S418]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_with_S(msee:event,msee:object) [1,2]   445    [S418]Completer
+Det(msee:object,msee:det) -> Det(msee:location,msee:det). [1,2]   446    [S419]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_across_S(msee:event,msee:location) [1,2]   447    [S419]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_around_S(msee:event,msee:location) [1,2]   448    [S419]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_over_S(msee:event,msee:location) [1,2]   449    [S419]Completer
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [2,2]   450    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) [2,2]   451    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [2,2]   452    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [2,2]   453    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [2,2]   454    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [2,2]   455    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:object) [2,2]   456    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:task) [2,2]   457    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [2,2]   458    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [2,2]   459    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [2,2]   460    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [2,2]   461    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [2,2]   462    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [2,2]   463    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [2,2]   464    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [2,2]   465    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [2,2]   466    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [2,2]   467    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [2,2]   468    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [2,2]   469    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [2,2]   470    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [2,2]   471    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [2,2]   472    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [2,2]   473    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [2,2]   474    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [2,2]   475    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [2,2]   476    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [2,2]   477    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [2,2]   478    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [2,2]   479    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [2,2]   480    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [2,2]   481    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [2,2]   482    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [2,2]   483    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [2,2]   484    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [2,2]   485    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [2,2]   486    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [2,2]   487    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [2,2]   488    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [2,2]   489    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [2,2]   490    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [2,2]   491    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [2,2]   492    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [2,2]   493    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [2,2]   494    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [2,2]   495    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [2,2]   496    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [2,2]   497    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [2,2]   498    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [2,2]   499    []Predictor
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Object_S(msee:event,msee:object) [1,2]   500    [S446]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:manner) Object_S(msee:event,msee:object) [1,2]   501    [S446]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Object_S(msee:event,msee:object) [1,2]   502    [S446]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Object_S(msee:event,msee:object) [1,2]   503    [S446]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det). Object_S(msee:event,msee:object) Preposition(msee:object1,msee:object2) [1,2]   504    [S446]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [1,2]   505    [S446]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:event,msee:object) [1,2]   506    [S446]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [1,2]   507    [S446]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [1,2]   508    [S446]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:human,msee:object) [1,2]   509    [S446]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [1,2]   510    [S446]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Preposition_S(msee:object1,msee:object2) [1,2]   511    [S446]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [1,2]   512    [S446]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_above_S(msee:event,msee:object) [1,2]   513    [S446]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_across_S(msee:event,msee:object) [1,2]   514    [S446]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_around_S(msee:event,msee:object) [1,2]   515    [S446]Completer
+Prep_at(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_at_S(msee:event,msee:object) [1,2]   516    [S446]Completer
+Prep_away_from(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_away_from_S(msee:event,msee:object) [1,2]   517    [S446]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [1,2]   518    [S446]Completer
+Prep_on(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_onPos(msee:event,msee:object) [1,2]   519    [S446]Completer
+Prep_out_of(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_out_of_S(msee:event,msee:object) [1,2]   520    [S446]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_over_S(msee:event,msee:object) [1,2]   521    [S446]Completer
+Prep_towards(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_towards_S(msee:event,msee:object) [1,2]   522    [S446]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [1,2]   523    [S446]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_with_S(msee:event,msee:object) [1,2]   524    [S446]Completer
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [2,2]   525    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [2,2]   526    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [2,2]   527    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [2,2]   528    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [2,2]   529    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [2,2]   530    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [2,2]   531    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [2,2]   532    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [2,2]   533    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:human) [2,2]   534    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:location) [2,2]   535    []Predictor
+Dobj(msee:event,msee:object) ->. DobjPos(msee:event,msee:object) [2,2]   536    []Predictor
+Dobj(msee:event,msee:task) ->. DobjPos(msee:event,msee:task) [2,2]   537    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [2,2]   538    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [2,2]   539    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [2,2]   540    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [2,2]   541    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [2,2]   542    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [2,2]   543    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [2,2]   544    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [2,2]   545    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [2,2]   546    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [2,2]   547    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [2,2]   548    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [2,2]   549    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [2,2]   550    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [2,2]   551    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [2,2]   552    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [2,2]   553    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [2,2]   554    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [2,2]   555    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [2,2]   556    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [2,2]   557    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [2,2]   558    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [2,2]   559    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [2,2]   560    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [2,2]   561    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [2,2]   562    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [2,2]   563    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [2,2]   564    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [2,2]   565    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [2,2]   566    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [2,2]   567    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [2,2]   568    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [2,2]   569    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [2,2]   570    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [2,2]   571    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [2,2]   572    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [2,2]   573    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [2,2]   574    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [2,2]   575    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [2,2]   576    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [2,2]   577    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [2,2]   578    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [2,2]   579    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [2,2]   580    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [2,2]   581    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [2,2]   582    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [2,2]   583    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [2,2]   584    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [2,2]   585    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [2,2]   586    []Predictor
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [2,2]   587    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [2,2]   588    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [2,2]   589    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [2,2]   590    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [2,2]   591    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [2,2]   592    []Predictor
+Dobj(msee:event,msee:human) ->. DobjPos(msee:event,msee:human) [2,2]   593    []Predictor
+Dobj(msee:event,msee:location) ->. DobjPos(msee:event,msee:location) [2,2]   594    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [2,2]   595    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [2,2]   596    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [2,2]   597    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [2,2]   598    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [2,2]   599    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [2,2]   600    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [2,2]   601    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [2,2]   602    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [2,2]   603    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [2,2]   604    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [2,2]   605    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [2,2]   606    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [2,2]   607    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [2,2]   608    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [2,2]   609    []Predictor
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [2,2]   610    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [2,2]   611    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [2,2]   612    []Predictor
+CHART==============3
+AmodPos(msee:object,msee:direction) -> amod(msee:object,msee:direction). [2,3]   613    []Scanner
+Amod_S(msee:object,msee:direction) -> AmodPos(msee:object,msee:direction). [2,3]   614    [S613]Completer
+Amod_S(msee:object,msee:null) -> Amod_S(msee:object,msee:direction). [2,3]   615    [S614]Completer
+Amod(msee:object,msee:null) -> Amod_S(msee:object,msee:null). [2,3]   616    [S615]Completer
+Amod(msee:object,msee:null) -> Amod_S(msee:object,msee:null). Amod_S(msee:object,msee:null) [2,3]   617    [S615]Completer
+Amod(msee:object,msee:null) -> Amod_S(msee:object,msee:null). Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [2,3]   618    [S615]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Object_S(msee:event,msee:object) [1,3]   619    [S418,S616]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:event,msee:object) [1,3]   620    [S418,S616]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:human,msee:object) [1,3]   621    [S418,S616]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:object1,msee:object2) [1,3]   622    [S418,S616]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_above_S(msee:event,msee:object) [1,3]   623    [S418,S616]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_intoPos(msee:event,msee:object) [1,3]   624    [S418,S616]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_with_S(msee:event,msee:object) [1,3]   625    [S418,S616]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Object_S(msee:event,msee:object) [1,3]   626    [S446,S616]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:event,msee:object) [1,3]   627    [S446,S616]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:human,msee:object) [1,3]   628    [S446,S616]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Preposition_S(msee:object1,msee:object2) [1,3]   629    [S446,S616]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_above_S(msee:event,msee:object) [1,3]   630    [S446,S616]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_intoPos(msee:event,msee:object) [1,3]   631    [S446,S616]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null). Prep_with_S(msee:event,msee:object) [1,3]   632    [S446,S616]Completer
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [3,3]   633    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [3,3]   634    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [3,3]   635    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [3,3]   636    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [3,3]   637    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:object) [3,3]   638    []Predictor
+Object_S(msee:event,msee:object) ->. Dobj(msee:event,msee:task) [3,3]   639    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [3,3]   640    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [3,3]   641    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [3,3]   642    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [3,3]   643    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [3,3]   644    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [3,3]   645    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [3,3]   646    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [3,3]   647    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [3,3]   648    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [3,3]   649    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [3,3]   650    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [3,3]   651    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [3,3]   652    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [3,3]   653    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [3,3]   654    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [3,3]   655    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [3,3]   656    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [3,3]   657    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [3,3]   658    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [3,3]   659    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [3,3]   660    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [3,3]   661    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [3,3]   662    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [3,3]   663    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [3,3]   664    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [3,3]   665    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [3,3]   666    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [3,3]   667    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [3,3]   668    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [3,3]   669    []Predictor
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [3,3]   670    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [3,3]   671    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [3,3]   672    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [3,3]   673    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [3,3]   674    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [3,3]   675    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:human) [3,3]   676    []Predictor
+Dobj(msee:event,msee:object) ->. Dobj(msee:event,msee:location) [3,3]   677    []Predictor
+Dobj(msee:event,msee:object) ->. DobjPos(msee:event,msee:object) [3,3]   678    []Predictor
+Dobj(msee:event,msee:task) ->. DobjPos(msee:event,msee:task) [3,3]   679    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [3,3]   680    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [3,3]   681    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [3,3]   682    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [3,3]   683    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [3,3]   684    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [3,3]   685    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [3,3]   686    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [3,3]   687    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [3,3]   688    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [3,3]   689    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [3,3]   690    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [3,3]   691    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [3,3]   692    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [3,3]   693    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [3,3]   694    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [3,3]   695    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [3,3]   696    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [3,3]   697    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [3,3]   698    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [3,3]   699    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [3,3]   700    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [3,3]   701    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [3,3]   702    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [3,3]   703    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [3,3]   704    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [3,3]   705    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [3,3]   706    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [3,3]   707    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [3,3]   708    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [3,3]   709    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [3,3]   710    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [3,3]   711    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [3,3]   712    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [3,3]   713    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [3,3]   714    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [3,3]   715    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [3,3]   716    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [3,3]   717    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [3,3]   718    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [3,3]   719    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [3,3]   720    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [3,3]   721    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [3,3]   722    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [3,3]   723    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [3,3]   724    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [3,3]   725    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [3,3]   726    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [3,3]   727    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [3,3]   728    []Predictor
+Dobj(msee:event,msee:human) ->. DobjPos(msee:event,msee:human) [3,3]   729    []Predictor
+Dobj(msee:event,msee:location) ->. DobjPos(msee:event,msee:location) [3,3]   730    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [3,3]   731    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [3,3]   732    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [3,3]   733    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [3,3]   734    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [3,3]   735    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [3,3]   736    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [3,3]   737    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [3,3]   738    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [3,3]   739    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [3,3]   740    []Predictor
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [3,3]   741    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [3,3]   742    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [3,3]   743    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [3,3]   744    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [3,3]   745    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [3,3]   746    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [3,3]   747    []Predictor
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [3,3]   748    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [3,3]   749    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [3,3]   750    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [3,3]   751    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [3,3]   752    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [3,3]   753    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [3,3]   754    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [3,3]   755    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [3,3]   756    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [3,3]   757    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [3,3]   758    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [3,3]   759    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [3,3]   760    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [3,3]   761    []Predictor
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [3,3]   762    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [3,3]   763    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [3,3]   764    []Predictor
+CHART==============4
+DobjPos(msee:event,msee:object) -> dobj(msee:event,msee:object). [3,4]   765    []Scanner
+Dobj(msee:event,msee:object) -> DobjPos(msee:event,msee:object). [3,4]   766    [S765]Completer
+Object_S(msee:event,msee:object) -> Dobj(msee:event,msee:object). [3,4]   767    [S766]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null) Object_S(msee:event,msee:object). [1,4]   768    [S418,S616,S767]Completer
+Object(msee:event,msee:object) -> Det(msee:object,msee:det) Amod(msee:object,msee:null) Object_S(msee:event,msee:object). [1,4]   769    [S446,S616,S767]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object). [0,4]   770    [S219,S768]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object). Preposition_P(msee:null,msee:null) [0,4]   771    [S219,S768]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object). [0,4]   772    [S219,S769]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object). Preposition_P(msee:null,msee:null) [0,4]   773    [S219,S769]Completer
+RootEvent -> RootP(ROOT-0,msee:event). [0,4]   774    [S770]        Completer
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) [4,4]   775    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,4]   776    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,4]   777    []Predictor
+Preposition_P(msee:null,msee:null) ->. Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,4]   778    []Predictor
+RootEvent -> RootP(ROOT-0,msee:event). [0,4]   779    [S772]        Completer
+Root -> RootEvent.                   [0,4]   780    [S774]          Completer
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:null) [4,4]   781    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:object) [4,4]   782    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:human,msee:object) [4,4]   783    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object1,msee:object2) [4,4]   784    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object,msee:human) [4,4]   785    []Predictor
+Root -> RootEvent.                   [0,4]   786    [S779]          Completer
+S -> Root.                           [0,4]   787    [S780]          Completer
+Preposition(msee:event,msee:null) ->. Advmod(msee:event,msee:direction) [4,4]   788    []Predictor
+Preposition(msee:event,msee:null) ->. Acomp(msee:event,msee:direction) [4,4]   789    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_from(msee:event,msee:direction) [4,4]   790    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_to(msee:event,msee:direction) [4,4]   791    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) [4,4]   792    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) Prep_to(msee:event,msee:direction) [4,4]   793    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_to(msee:event,msee:direction) [4,4]   794    []Predictor
+Preposition(msee:event,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [4,4]   795    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [4,4]   796    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Prep_by(msee:event,msee:object) [4,4]   797    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:event,msee:object) [4,4]   798    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [4,4]   799    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [4,4]   800    []Predictor
+Preposition(msee:event,msee:object) ->. Preposition_S(msee:event,msee:object) [4,4]   801    []Predictor
+Preposition(msee:human,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [4,4]   802    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [4,4]   803    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:human,msee:object) [4,4]   804    []Predictor
+Preposition(msee:human,msee:object) ->. Preposition_S(msee:human,msee:object) [4,4]   805    []Predictor
+Preposition(msee:object1,msee:object2) ->. Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [4,4]   806    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [4,4]   807    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Preposition_S(msee:object1,msee:object2) [4,4]   808    []Predictor
+Preposition(msee:object1,msee:object2) ->. Preposition_S(msee:object1,msee:object2) [4,4]   809    []Predictor
+S -> Root.                           [0,4]   810    [S786]          Completer
+@ -> S.                              [0,4]   811    [S787]          Completer
+Advmod(msee:event,msee:direction) ->. AdvmodPos(msee:event,msee:direction) [4,4]   812    []Predictor
+Acomp(msee:event,msee:direction) ->. AcompPos(msee:event,msee:direction) [4,4]   813    []Predictor
+Det(msee:direction,msee:det) ->. DetPos(msee:direction,msee:det) [4,4]   814    []Predictor
+Prep_from(msee:event,msee:direction) ->. Prep_fromPos(msee:event,msee:direction) [4,4]   815    []Predictor
+Prep_to(msee:event,msee:direction) ->. Prep_toPos(msee:event,msee:direction) [4,4]   816    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) [4,4]   817    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [4,4]   818    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [4,4]   819    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [4,4]   820    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [4,4]   821    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [4,4]   822    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [4,4]   823    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [4,4]   824    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [4,4]   825    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [4,4]   826    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [4,4]   827    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [4,4]   828    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [4,4]   829    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [4,4]   830    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [4,4]   831    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [4,4]   832    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [4,4]   833    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [4,4]   834    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [4,4]   835    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [4,4]   836    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [4,4]   837    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [4,4]   838    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [4,4]   839    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [4,4]   840    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [4,4]   841    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [4,4]   842    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [4,4]   843    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [4,4]   844    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [4,4]   845    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [4,4]   846    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [4,4]   847    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [4,4]   848    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [4,4]   849    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [4,4]   850    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [4,4]   851    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [4,4]   852    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [4,4]   853    []Predictor
+@ -> S.                              [0,4]   854    [S810]          Completer
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [4,4]   855    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [4,4]   856    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [4,4]   857    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [4,4]   858    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [4,4]   859    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [4,4]   860    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [4,4]   861    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [4,4]   862    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [4,4]   863    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [4,4]   864    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [4,4]   865    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [4,4]   866    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [4,4]   867    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [4,4]   868    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [4,4]   869    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [4,4]   870    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [4,4]   871    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [4,4]   872    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [4,4]   873    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [4,4]   874    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [4,4]   875    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [4,4]   876    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [4,4]   877    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [4,4]   878    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [4,4]   879    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [4,4]   880    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [4,4]   881    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [4,4]   882    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [4,4]   883    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [4,4]   884    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [4,4]   885    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [4,4]   886    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [4,4]   887    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [4,4]   888    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [4,4]   889    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [4,4]   890    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [4,4]   891    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [4,4]   892    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [4,4]   893    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [4,4]   894    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [4,4]   895    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [4,4]   896    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [4,4]   897    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [4,4]   898    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [4,4]   899    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [4,4]   900    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [4,4]   901    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [4,4]   902    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [4,4]   903    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [4,4]   904    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [4,4]   905    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [4,4]   906    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [4,4]   907    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [4,4]   908    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [4,4]   909    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [4,4]   910    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [4,4]   911    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [4,4]   912    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [4,4]   913    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [4,4]   914    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [4,4]   915    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [4,4]   916    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [4,4]   917    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [4,4]   918    []Predictor
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [4,4]   919    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [4,4]   920    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [4,4]   921    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [4,4]   922    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [4,4]   923    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [4,4]   924    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [4,4]   925    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [4,4]   926    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [4,4]   927    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [4,4]   928    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [4,4]   929    []Predictor
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [4,4]   930    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [4,4]   931    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [4,4]   932    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [4,4]   933    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [4,4]   934    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [4,4]   935    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [4,4]   936    []Predictor
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [4,4]   937    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [4,4]   938    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [4,4]   939    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [4,4]   940    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [4,4]   941    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [4,4]   942    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [4,4]   943    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [4,4]   944    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [4,4]   945    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [4,4]   946    []Predictor
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [4,4]   947    []Predictor
+CHART==============5
+DetPos(msee:object,msee:det) -> det(msee:object,msee:det). [4,5]   948    []Scanner
+Det(msee:object,msee:det) -> DetPos(msee:object,msee:det). [4,5]   949    [S948]Completer
+Det(msee:location,msee:det) -> DetPos(msee:object,msee:det). [4,5]   950    [S948]Completer
+Prep_for(msee:event,msee:object) -> DetPos(msee:object,msee:det). Prep_for_S(msee:event,msee:object) [4,5]   951    [S948]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [4,5]   952    [S949]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:event,msee:object) [4,5]   953    [S949]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [4,5]   954    [S949]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [4,5]   955    [S949]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:human,msee:object) [4,5]   956    [S949]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [4,5]   957    [S949]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Preposition_S(msee:object1,msee:object2) [4,5]   958    [S949]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [4,5]   959    [S949]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_above_S(msee:event,msee:object) [4,5]   960    [S949]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_across_S(msee:event,msee:object) [4,5]   961    [S949]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_around_S(msee:event,msee:object) [4,5]   962    [S949]Completer
+Prep_at(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_at_S(msee:event,msee:object) [4,5]   963    [S949]Completer
+Prep_away_from(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_away_from_S(msee:event,msee:object) [4,5]   964    [S949]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [4,5]   965    [S949]Completer
+Prep_on(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_onPos(msee:event,msee:object) [4,5]   966    [S949]Completer
+Prep_out_of(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_out_of_S(msee:event,msee:object) [4,5]   967    [S949]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_over_S(msee:event,msee:object) [4,5]   968    [S949]Completer
+Prep_towards(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_towards_S(msee:event,msee:object) [4,5]   969    [S949]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [4,5]   970    [S949]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_with_S(msee:event,msee:object) [4,5]   971    [S949]Completer
+Det(msee:object,msee:det) -> Det(msee:location,msee:det). [4,5]   972    [S950]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_across_S(msee:event,msee:location) [4,5]   973    [S950]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_around_S(msee:event,msee:location) [4,5]   974    [S950]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:location,msee:det). Prep_over_S(msee:event,msee:location) [4,5]   975    [S950]Completer
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [5,5]   976    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) [5,5]   977    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [5,5]   978    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [5,5]   979    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [5,5]   980    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [5,5]   981    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [5,5]   982    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [5,5]   983    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [5,5]   984    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [5,5]   985    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [5,5]   986    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [5,5]   987    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [5,5]   988    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [5,5]   989    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [5,5]   990    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [5,5]   991    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [5,5]   992    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [5,5]   993    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [5,5]   994    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [5,5]   995    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [5,5]   996    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [5,5]   997    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [5,5]   998    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [5,5]   999    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [5,5]   1000    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [5,5]   1001    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [5,5]   1002    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [5,5]   1003    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [5,5]   1004    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [5,5]   1005    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [5,5]   1006    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [5,5]   1007    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [5,5]   1008    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [5,5]   1009    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [5,5]   1010    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [5,5]   1011    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [5,5]   1012    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [5,5]   1013    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [5,5]   1014    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [5,5]   1015    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [5,5]   1016    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [5,5]   1017    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [5,5]   1018    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [5,5]   1019    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [5,5]   1020    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [5,5]   1021    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [5,5]   1022    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [5,5]   1023    []Predictor
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [4,5]   1024    [S972]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:event,msee:object) [4,5]   1025    [S972]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det). Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [4,5]   1026    [S972]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [4,5]   1027    [S972]Completer
+Preposition(msee:human,msee:object) -> Det(msee:object,msee:det). Preposition_S(msee:human,msee:object) [4,5]   1028    [S972]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [4,5]   1029    [S972]Completer
+Preposition(msee:object1,msee:object2) -> Det(msee:object,msee:det). Preposition_S(msee:object1,msee:object2) [4,5]   1030    [S972]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [4,5]   1031    [S972]Completer
+Prep_above(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_above_S(msee:event,msee:object) [4,5]   1032    [S972]Completer
+Prep_across(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_across_S(msee:event,msee:object) [4,5]   1033    [S972]Completer
+Prep_around(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_around_S(msee:event,msee:object) [4,5]   1034    [S972]Completer
+Prep_at(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_at_S(msee:event,msee:object) [4,5]   1035    [S972]Completer
+Prep_away_from(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_away_from_S(msee:event,msee:object) [4,5]   1036    [S972]Completer
+Prep_into(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [4,5]   1037    [S972]Completer
+Prep_on(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_onPos(msee:event,msee:object) [4,5]   1038    [S972]Completer
+Prep_out_of(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_out_of_S(msee:event,msee:object) [4,5]   1039    [S972]Completer
+Prep_over(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_over_S(msee:event,msee:object) [4,5]   1040    [S972]Completer
+Prep_towards(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_towards_S(msee:event,msee:object) [4,5]   1041    [S972]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [4,5]   1042    [S972]Completer
+Prep_with(msee:event,msee:object) -> Det(msee:object,msee:det). Prep_with_S(msee:event,msee:object) [4,5]   1043    [S972]Completer
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [5,5]   1044    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [5,5]   1045    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [5,5]   1046    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [5,5]   1047    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [5,5]   1048    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [5,5]   1049    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [5,5]   1050    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [5,5]   1051    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [5,5]   1052    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [5,5]   1053    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [5,5]   1054    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [5,5]   1055    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [5,5]   1056    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [5,5]   1057    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [5,5]   1058    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [5,5]   1059    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [5,5]   1060    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [5,5]   1061    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [5,5]   1062    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [5,5]   1063    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [5,5]   1064    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [5,5]   1065    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [5,5]   1066    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [5,5]   1067    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [5,5]   1068    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [5,5]   1069    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [5,5]   1070    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [5,5]   1071    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [5,5]   1072    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [5,5]   1073    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [5,5]   1074    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [5,5]   1075    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [5,5]   1076    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [5,5]   1077    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [5,5]   1078    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [5,5]   1079    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [5,5]   1080    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [5,5]   1081    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [5,5]   1082    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [5,5]   1083    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [5,5]   1084    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [5,5]   1085    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [5,5]   1086    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [5,5]   1087    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [5,5]   1088    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [5,5]   1089    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [5,5]   1090    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [5,5]   1091    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [5,5]   1092    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [5,5]   1093    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [5,5]   1094    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [5,5]   1095    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [5,5]   1096    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [5,5]   1097    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [5,5]   1098    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [5,5]   1099    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [5,5]   1100    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [5,5]   1101    []Predictor
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [5,5]   1102    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [5,5]   1103    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [5,5]   1104    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [5,5]   1105    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [5,5]   1106    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [5,5]   1107    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [5,5]   1108    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [5,5]   1109    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [5,5]   1110    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [5,5]   1111    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [5,5]   1112    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [5,5]   1113    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [5,5]   1114    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [5,5]   1115    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [5,5]   1116    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [5,5]   1117    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [5,5]   1118    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [5,5]   1119    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [5,5]   1120    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [5,5]   1121    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [5,5]   1122    []Predictor
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [5,5]   1123    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [5,5]   1124    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [5,5]   1125    []Predictor
+CHART==============6
+Prep_toPos(msee:event,msee:object) -> prep_to(msee:event,msee:object). [5,6]   1126    []Scanner
+Prep_to(msee:event,msee:object) -> Prep_toPos(msee:event,msee:object). [5,6]   1127    [S1126]Completer
+Preposition_S(msee:event,msee:object) -> Prep_to(msee:event,msee:object). [5,6]   1128    [S1127]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det) Preposition_S(msee:event,msee:object). [4,6]   1129    [S949,S1128]Completer
+Preposition(msee:event,msee:object) -> Det(msee:object,msee:det) Preposition_S(msee:event,msee:object). [4,6]   1130    [S972,S1128]Completer
+Preposition(msee:null,msee:null) -> Preposition(msee:event,msee:object). [4,6]   1131    [S1129]Completer
+Preposition(msee:null,msee:null) -> Preposition(msee:event,msee:object). [4,6]   1132    [S1130]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). [4,6]   1133    [S1131]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) [4,6]   1134    [S1131]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,6]   1135    [S1131]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,6]   1136    [S1131]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). [4,6]   1137    [S1132]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) [4,6]   1138    [S1132]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,6]   1139    [S1132]Completer
+Preposition_P(msee:null,msee:null) -> Preposition(msee:null,msee:null). Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) Preposition(msee:null,msee:null) [4,6]   1140    [S1132]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null). [0,6]   1141    [S219,S768,S1133]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null). [0,6]   1142    [S219,S769,S1133]Completer
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:null) [6,6]   1143    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:event,msee:object) [6,6]   1144    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:human,msee:object) [6,6]   1145    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object1,msee:object2) [6,6]   1146    []Predictor
+Preposition(msee:null,msee:null) ->. Preposition(msee:object,msee:human) [6,6]   1147    []Predictor
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null). [0,6]   1148    [S219,S768,S1137]Completer
+RootP(ROOT-0,msee:event) -> RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null). [0,6]   1149    [S219,S769,S1137]Completer
+RootEvent -> RootP(ROOT-0,msee:event). [0,6]   1150    [S1141]      Completer
+RootEvent -> RootP(ROOT-0,msee:event). [0,6]   1151    [S1142]      Completer
+Preposition(msee:event,msee:null) ->. Advmod(msee:event,msee:direction) [6,6]   1152    []Predictor
+Preposition(msee:event,msee:null) ->. Acomp(msee:event,msee:direction) [6,6]   1153    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_from(msee:event,msee:direction) [6,6]   1154    []Predictor
+Preposition(msee:event,msee:null) ->. Det(msee:direction,msee:det) Prep_to(msee:event,msee:direction) [6,6]   1155    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) [6,6]   1156    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_from(msee:event,msee:direction) Prep_to(msee:event,msee:direction) [6,6]   1157    []Predictor
+Preposition(msee:event,msee:null) ->. Prep_to(msee:event,msee:direction) [6,6]   1158    []Predictor
+Preposition(msee:event,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [6,6]   1159    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:event,msee:object) [6,6]   1160    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Prep_by(msee:event,msee:object) [6,6]   1161    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:event,msee:object) [6,6]   1162    []Predictor
+Preposition(msee:event,msee:object) ->. Det(msee:object,msee:det) Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [6,6]   1163    []Predictor
+Preposition(msee:event,msee:object) ->. Num(msee:object,msee:number) Preposition_S(msee:event,msee:object) [6,6]   1164    []Predictor
+Preposition(msee:event,msee:object) ->. Preposition_S(msee:event,msee:object) [6,6]   1165    []Predictor
+Preposition(msee:human,msee:object) ->. Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [6,6]   1166    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:human,msee:object) [6,6]   1167    []Predictor
+Preposition(msee:human,msee:object) ->. Det(msee:object,msee:det) Preposition_S(msee:human,msee:object) [6,6]   1168    []Predictor
+Preposition(msee:human,msee:object) ->. Preposition_S(msee:human,msee:object) [6,6]   1169    []Predictor
+Preposition(msee:object1,msee:object2) ->. Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [6,6]   1170    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Preposition_S(msee:object1,msee:object2) [6,6]   1171    []Predictor
+Preposition(msee:object1,msee:object2) ->. Det(msee:object,msee:det) Preposition_S(msee:object1,msee:object2) [6,6]   1172    []Predictor
+Preposition(msee:object1,msee:object2) ->. Preposition_S(msee:object1,msee:object2) [6,6]   1173    []Predictor
+RootEvent -> RootP(ROOT-0,msee:event). [0,6]   1174    [S1148]      Completer
+RootEvent -> RootP(ROOT-0,msee:event). [0,6]   1175    [S1149]      Completer
+Root -> RootEvent.                   [0,6]   1176    [S1150]        Completer
+Root -> RootEvent.                   [0,6]   1177    [S1151]        Completer
+Advmod(msee:event,msee:direction) ->. AdvmodPos(msee:event,msee:direction) [6,6]   1178    []Predictor
+Acomp(msee:event,msee:direction) ->. AcompPos(msee:event,msee:direction) [6,6]   1179    []Predictor
+Det(msee:direction,msee:det) ->. DetPos(msee:direction,msee:det) [6,6]   1180    []Predictor
+Prep_from(msee:event,msee:direction) ->. Prep_fromPos(msee:event,msee:direction) [6,6]   1181    []Predictor
+Prep_to(msee:event,msee:direction) ->. Prep_toPos(msee:event,msee:direction) [6,6]   1182    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) [6,6]   1183    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [6,6]   1184    []Predictor
+Amod(msee:object,msee:null) ->. Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) Amod_S(msee:object,msee:null) [6,6]   1185    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:location,msee:det) [6,6]   1186    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:human,msee:det) [6,6]   1187    []Predictor
+Det(msee:object,msee:det) ->. Det(msee:occupation,msee:det) [6,6]   1188    []Predictor
+Det(msee:object,msee:det) ->. DetPos(msee:object,msee:det) [6,6]   1189    []Predictor
+Det(msee:object,msee:det) ->. PossPos(msee:object,msee:poss) [6,6]   1190    []Predictor
+Num(msee:object,msee:number) ->. Num(msee:human,msee:number) [6,6]   1191    []Predictor
+Num(msee:object,msee:number) ->. NumPos(msee:object,msee:number) [6,6]   1192    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_above(msee:event,msee:object) [6,6]   1193    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_across(msee:event,msee:object) [6,6]   1194    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_among(msee:event,msee:object) [6,6]   1195    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_around(msee:event,msee:object) [6,6]   1196    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_at(msee:event,msee:object) [6,6]   1197    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_away_from(msee:event,msee:object) [6,6]   1198    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_for(msee:event,msee:object) [6,6]   1199    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_from(msee:event,msee:object) [6,6]   1200    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_in(msee:event,msee:object) [6,6]   1201    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_into(msee:event,msee:object) [6,6]   1202    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_on(msee:event,msee:object) [6,6]   1203    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_out_of(msee:event,msee:object) [6,6]   1204    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_over(msee:event,msee:object) [6,6]   1205    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_to(msee:event,msee:object) [6,6]   1206    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_towards(msee:event,msee:object) [6,6]   1207    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prep_with(msee:event,msee:object) [6,6]   1208    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) [6,6]   1209    []Predictor
+Preposition_S(msee:event,msee:object) ->. Prt(msee:event,msee:prep) Prep_of(msee:event,msee:object) [6,6]   1210    []Predictor
+Preposition_S(msee:human,msee:object) ->. Prep_in(msee:human,msee:object) [6,6]   1211    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_from(msee:object1,msee:object2) [6,6]   1212    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in(msee:object1,msee:object2) [6,6]   1213    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_in_front_of(msee:object1,msee:object2) [6,6]   1214    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_inside(msee:object1,msee:object2) [6,6]   1215    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_of(msee:object1,msee:object2) [6,6]   1216    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_to(msee:object1,msee:object2) [6,6]   1217    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_on_top_of(msee:object1,msee:object2) [6,6]   1218    []Predictor
+Preposition_S(msee:object1,msee:object2) ->. Prep_outside(msee:object1,msee:object2) [6,6]   1219    []Predictor
+Root -> RootEvent.                   [0,6]   1220    [S1174]        Completer
+Root -> RootEvent.                   [0,6]   1221    [S1175]        Completer
+S -> Root.                           [0,6]   1222    [S1176]        Completer
+S -> Root.                           [0,6]   1223    [S1177]        Completer
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:color) [6,6]   1224    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:direction) [6,6]   1225    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:manner) [6,6]   1226    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:position) [6,6]   1227    []Predictor
+Amod_S(msee:object,msee:null) ->. Amod_S(msee:object,msee:size) [6,6]   1228    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:location,msee:det) [6,6]   1229    []Predictor
+Det(msee:location,msee:det) ->. DetPos(msee:object,msee:det) [6,6]   1230    []Predictor
+Det(msee:location,msee:det) ->. PossPos(msee:object,msee:poss) [6,6]   1231    []Predictor
+Det(msee:human,msee:det) ->. DetPos(msee:human,msee:det) [6,6]   1232    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:occupation,msee:det) [6,6]   1233    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:race,msee:det) [6,6]   1234    []Predictor
+Det(msee:human,msee:det) ->. Det(msee:religion,msee:det) [6,6]   1235    []Predictor
+Det(msee:human,msee:det) ->. PossPos(msee:human,msee:poss) [6,6]   1236    []Predictor
+Det(msee:occupation,msee:det) ->. DetPos(msee:occupation,msee:det) [6,6]   1237    []Predictor
+Num(msee:human,msee:number) ->. NumPos(msee:human,msee:number) [6,6]   1238    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_above_S(msee:event,msee:object) [6,6]   1239    []Predictor
+Prep_above(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_above_S(msee:event,msee:object) [6,6]   1240    []Predictor
+Prep_above(msee:event,msee:object) ->. Prep_above_S(msee:event,msee:object) [6,6]   1241    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_across_S(msee:event,msee:object) [6,6]   1242    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:object) [6,6]   1243    []Predictor
+Prep_across(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_across_S(msee:event,msee:location) [6,6]   1244    []Predictor
+Prep_across(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [6,6]   1245    []Predictor
+Prep_among(msee:event,msee:object) ->. Prep_amongPos(msee:event,msee:object) [6,6]   1246    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_around_S(msee:event,msee:object) [6,6]   1247    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:object) [6,6]   1248    []Predictor
+Prep_around(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_around_S(msee:event,msee:location) [6,6]   1249    []Predictor
+Prep_around(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [6,6]   1250    []Predictor
+Prep_at(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_at_S(msee:event,msee:object) [6,6]   1251    []Predictor
+Prep_at(msee:event,msee:object) ->. Prep_at_S(msee:event,msee:object) [6,6]   1252    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_away_from_S(msee:event,msee:object) [6,6]   1253    []Predictor
+Prep_away_from(msee:event,msee:object) ->. Prep_away_from_S(msee:event,msee:object) [6,6]   1254    []Predictor
+Prep_for(msee:event,msee:object) ->. DetPos(msee:object,msee:det) Prep_for_S(msee:event,msee:object) [6,6]   1255    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:event,msee:object) [6,6]   1256    []Predictor
+Prep_for(msee:event,msee:object) ->. Prep_for_S(msee:object1,msee:object2) [6,6]   1257    []Predictor
+Prep_from(msee:event,msee:object) ->. Prep_fromPos(msee:event,msee:object) [6,6]   1258    []Predictor
+Prep_in(msee:event,msee:object) ->. Prep_inPos(msee:event,msee:object) [6,6]   1259    []Predictor
+Prep_into(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_intoPos(msee:event,msee:object) [6,6]   1260    []Predictor
+Prep_into(msee:event,msee:object) ->. Prep_intoPos(msee:event,msee:object) [6,6]   1261    []Predictor
+Prep_on(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_onPos(msee:event,msee:object) [6,6]   1262    []Predictor
+Prep_on(msee:event,msee:object) ->. Prep_onPos(msee:event,msee:object) [6,6]   1263    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_out_of_S(msee:event,msee:object) [6,6]   1264    []Predictor
+Prep_out_of(msee:event,msee:object) ->. Prep_out_of_S(msee:event,msee:object) [6,6]   1265    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_over_S(msee:event,msee:object) [6,6]   1266    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:object) [6,6]   1267    []Predictor
+Prep_over(msee:event,msee:object) ->. Det(msee:location,msee:det) Prep_over_S(msee:event,msee:location) [6,6]   1268    []Predictor
+Prep_over(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [6,6]   1269    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:human) [6,6]   1270    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:object) [6,6]   1271    []Predictor
+Prep_to(msee:event,msee:object) ->. Prep_toPos(msee:event,msee:task) [6,6]   1272    []Predictor
+Prep_towards(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_towards_S(msee:event,msee:object) [6,6]   1273    []Predictor
+Prep_towards(msee:event,msee:object) ->. Prep_towards_S(msee:event,msee:object) [6,6]   1274    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Amod(msee:object,msee:null) Prep_with_S(msee:event,msee:object) [6,6]   1275    []Predictor
+Prep_with(msee:event,msee:object) ->. Det(msee:object,msee:det) Prep_with_S(msee:event,msee:object) [6,6]   1276    []Predictor
+Prep_with(msee:event,msee:object) ->. Prep_with_S(msee:event,msee:object) [6,6]   1277    []Predictor
+Prt(msee:event,msee:prep) ->. PrtPos(msee:event,msee:prep) [6,6]   1278    []Predictor
+Prep_in(msee:human,msee:object) ->. Prep_inPos(msee:human,msee:object) [6,6]   1279    []Predictor
+Prep_from(msee:object1,msee:object2) ->. Prep_fromPos(msee:object1,msee:object2) [6,6]   1280    []Predictor
+Prep_in(msee:object1,msee:object2) ->. Prep_inPos(msee:object1,msee:object2) [6,6]   1281    []Predictor
+Prep_in_front_of(msee:object1,msee:object2) ->. Prep_in_front_ofPos(msee:object1,msee:object2) [6,6]   1282    []Predictor
+Prep_inside(msee:object1,msee:object2) ->. Prep_insidePos(msee:object1,msee:object2) [6,6]   1283    []Predictor
+Prep_of(msee:object1,msee:object2) ->. Prep_ofPos(msee:object1,msee:object2) [6,6]   1284    []Predictor
+Prep_to(msee:object1,msee:object2) ->. Prep_toPos(msee:object1,msee:object2) [6,6]   1285    []Predictor
+Prep_on_top_of(msee:object1,msee:object2) ->. Prep_on_top_ofPos(msee:object1,msee:object2) [6,6]   1286    []Predictor
+Prep_outside(msee:object1,msee:object2) ->. Prep_outsidePos(msee:object1,msee:object2) [6,6]   1287    []Predictor
+S -> Root.                           [0,6]   1288    [S1220]        Completer
+S -> Root.                           [0,6]   1289    [S1221]        Completer
+@ -> S.                              [0,6]   1290    [S1222]        Completer
+@ -> S.                              [0,6]   1291    [S1223]        Completer
+Amod_S(msee:object,msee:color) ->. AmodPos(msee:object,msee:color) [6,6]   1292    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:human,msee:direction) [6,6]   1293    []Predictor
+Amod_S(msee:object,msee:direction) ->. AmodPos(msee:object,msee:direction) [6,6]   1294    []Predictor
+Amod_S(msee:object,msee:manner) ->. AmodPos(msee:object,msee:manner) [6,6]   1295    []Predictor
+Amod_S(msee:object,msee:position) ->. AmodPos(msee:object,msee:position) [6,6]   1296    []Predictor
+Amod_S(msee:object,msee:size) ->. AmodPos(msee:object,msee:size) [6,6]   1297    []Predictor
+Det(msee:race,msee:det) ->. DetPos(msee:race,msee:det) [6,6]   1298    []Predictor
+Det(msee:religion,msee:det) ->. DetPos(msee:religion,msee:det) [6,6]   1299    []Predictor
+Prep_above_S(msee:event,msee:object) ->. Prep_abovePos(msee:event,msee:object) [6,6]   1300    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_across_S(msee:event,msee:location) [6,6]   1301    []Predictor
+Prep_across_S(msee:event,msee:object) ->. Prep_acrossPos(msee:event,msee:object) [6,6]   1302    []Predictor
+Prep_across_S(msee:event,msee:location) ->. Prep_acrossPos(msee:event,msee:location) [6,6]   1303    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_around_S(msee:event,msee:location) [6,6]   1304    []Predictor
+Prep_around_S(msee:event,msee:object) ->. Prep_aroundPos(msee:event,msee:object) [6,6]   1305    []Predictor
+Prep_around_S(msee:event,msee:location) ->. Prep_aroundPos(msee:event,msee:location) [6,6]   1306    []Predictor
+Prep_at_S(msee:event,msee:object) ->. Prep_atPos(msee:event,msee:object) [6,6]   1307    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:human) [6,6]   1308    []Predictor
+Prep_away_from_S(msee:event,msee:object) ->. Prep_away_fromPos(msee:event,msee:object) [6,6]   1309    []Predictor
+Prep_for_S(msee:event,msee:object) ->. Prep_forPos(msee:event,msee:object) [6,6]   1310    []Predictor
+Prep_for_S(msee:object1,msee:object2) ->. Prep_for_S(msee:human,msee:object) [6,6]   1311    []Predictor
+Prep_out_of_S(msee:event,msee:object) ->. Prep_out_ofPos(msee:event,msee:object) [6,6]   1312    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_over_S(msee:event,msee:location) [6,6]   1313    []Predictor
+Prep_over_S(msee:event,msee:object) ->. Prep_overPos(msee:event,msee:object) [6,6]   1314    []Predictor
+Prep_over_S(msee:event,msee:location) ->. Prep_overPos(msee:event,msee:location) [6,6]   1315    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:human) [6,6]   1316    []Predictor
+Prep_towards_S(msee:event,msee:object) ->. Prep_towardsPos(msee:event,msee:object) [6,6]   1317    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:human) [6,6]   1318    []Predictor
+Prep_with_S(msee:event,msee:object) ->. Prep_withPos(msee:event,msee:object) [6,6]   1319    []Predictor
+@ -> S.                              [0,6]   1320    [S1288]        Completer
+@ -> S.                              [0,6]   1321    [S1289]        Completer
+Prep_for_S(msee:human,msee:object) ->. Prep_forPos(msee:human,msee:object) [6,6]   1322    []Predictor

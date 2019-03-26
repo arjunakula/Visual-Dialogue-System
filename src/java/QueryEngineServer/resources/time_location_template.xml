@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Query id="query-1" version="1.0" xmlns="http://www.siginnovations.com/MSEE">
+	<Comment>We fill this template with the time period (if any) specified in a natural language query and the locations (if any) specified in the XML surrounding that query.</Comment>
+	<Times>
+		<SceneCentricTimePeriod id="time_id" persists="false">
+			<StartTime>start_time</StartTime>
+			<EndTime>end_time</EndTime>
+		</SceneCentricTimePeriod>
+	</Times>
+	<Locations>all_locations</Locations>
+	<QueryStatement>
+	<!-- We must have a query statement node, in order for XMLToSPARQLTranslator to reinitialize Global.locationDefinitionsUsedInLastQuery and Global.timePeriodDefinitionsUsedInLastQuery. -->
+	</QueryStatement>
+</Query>

@@ -1,0 +1,17 @@
+<scene>
+  <event>
+    <id>Fold1001</id>
+    <type>fold</type>
+    <patient>sleeve1004</patient>
+    <locationTo>left1007</locationTo>
+  </event>
+  <object>
+    <id>sleeve1004</id>
+    <type>Sleeve</type>
+    <direction>right</direction>
+  </object>
+  <object>
+    <id>left1007</id>
+    <type>Position</type>
+  </object>
+</scene>

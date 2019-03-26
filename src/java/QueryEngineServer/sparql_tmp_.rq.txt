@@ -1,0 +1,15 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX data: <http://msee/data.rdf#>
+PREFIX msee: <http://msee/ontology/msee.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fn: <java:sparql.>
+
+SELECT ?agent_name ?who105001 ?has105002 
+WHERE {
+	 OPTIONAL { ?who105001 msee:hasName ?agent_name }
+	?hat105004 rdf:type/rdfs:subClassOf* msee:Hat .
+	?has105002 rdf:type/rdfs:subClassOf* msee:Have .
+	?has105002 msee:hasAgent ?who105001 .
+	?has105002 msee:hasPatient ?hat105004 .
+
+}

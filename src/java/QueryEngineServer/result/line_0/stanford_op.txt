@@ -1,0 +1,6 @@
+root(ROOT-0, Fold-1)
+det(sleeve-4, the-2)
+amod(sleeve-4, right-3)
+dobj(Fold-1, sleeve-4)
+det(left-7, the-6)
+prep_to(Fold-1, left-7)

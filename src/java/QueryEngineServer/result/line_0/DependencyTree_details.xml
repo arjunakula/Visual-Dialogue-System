@@ -1,0 +1,281 @@
+<root name="S">
+  <production name="S -- Root"/>
+  <field_attribute/>
+  <field_attribute/>
+  <node name="Root">
+    <production name="Root -- RootEvent"/>
+    <field_attribute/>
+    <field_attribute/>
+    <node name="RootEvent">
+      <production name="RootEvent -- RootP(ROOT-0,msee:event)"/>
+      <attribute name="msee:event.type" value="fold"/>
+      <attribute name="msee:event.id" value="Fold1001"/>
+      <field_attribute/>
+      <field_attribute/>
+      <node name="RootP(ROOT-0,msee:event)">
+        <production name="RootP(ROOT-0,msee:event) -- RootS(ROOT-0,msee:event) Object(msee:event,msee:object) Preposition_P(msee:null,msee:null)"/>
+        <attribute name="msee:event.type" value="fold"/>
+        <attribute name="msee:event.id" value="Fold1001"/>
+        <attribute name="msee:object.type" value="Sleeve"/>
+        <attribute name="msee:object.id" value="sleeve1004"/>
+        <field_attribute/>
+        <field_attribute/>
+        <node name="RootS(ROOT-0,msee:event)">
+          <production name="RootS(ROOT-0,msee:event) -- RootSPos(ROOT-0,msee:event)"/>
+          <attribute name="msee:event.type" value="fold"/>
+          <attribute name="msee:event.id" value="Fold1001"/>
+          <field_attribute/>
+          <field_attribute/>
+          <node name="RootSPos(ROOT-0,msee:event)">
+            <production name="RootSPos(ROOT-0,msee:event) -- root(ROOT-0,msee:event)"/>
+            <attribute name="msee:event.type" value="fold"/>
+            <attribute name="msee:event.id" value="Fold1001"/>
+            <field_attribute/>
+            <field_attribute/>
+            <node name="root(ROOT-0,msee:event)">
+              <attribute name="msee:event.type" value="fold"/>
+              <attribute name="msee:event.id" value="Fold1001"/>
+              <field_attribute/>
+              <field_attribute>
+                <attribute name="msee:event.type" value="fold"/>
+                <attribute name="msee:event.id" value="Fold1001"/>
+              </field_attribute>
+            </node>
+          </node>
+        </node>
+        <node name="Object(msee:event,msee:object)">
+          <production name="Object(msee:event,msee:object) -- Det(msee:object,msee:det) Amod(msee:object,msee:null) Object_S(msee:event,msee:object)"/>
+          <attribute name="msee:object.type" value="Sleeve"/>
+          <attribute name="msee:object.id" value="sleeve1004"/>
+          <attribute name="msee:event.type" value="fold"/>
+          <attribute name="msee:event.id" value="Fold1001"/>
+          <field_attribute/>
+          <field_attribute/>
+          <node name="Det(msee:object,msee:det)">
+            <production name="Det(msee:object,msee:det) -- DetPos(msee:object,msee:det)"/>
+            <attribute name="msee:object.type" value="Sleeve"/>
+            <attribute name="msee:object.id" value="sleeve1004"/>
+            <attribute name="msee:det.type" value="the"/>
+            <attribute name="msee:det.id" value="the1002"/>
+            <field_attribute/>
+            <field_attribute/>
+            <node name="DetPos(msee:object,msee:det)">
+              <production name="DetPos(msee:object,msee:det) -- det(msee:object,msee:det)"/>
+              <attribute name="msee:object.type" value="Sleeve"/>
+              <attribute name="msee:object.id" value="sleeve1004"/>
+              <attribute name="msee:det.type" value="the"/>
+              <attribute name="msee:det.id" value="the1002"/>
+              <field_attribute/>
+              <field_attribute/>
+              <node name="det(msee:object,msee:det)">
+                <attribute name="msee:object.type" value="Sleeve"/>
+                <attribute name="msee:object.id" value="sleeve1004"/>
+                <attribute name="msee:det.type" value="the"/>
+                <attribute name="msee:det.id" value="the1002"/>
+                <field_attribute>
+                  <attribute name="msee:object.type" value="Sleeve"/>
+                  <attribute name="msee:object.id" value="sleeve1004"/>
+                </field_attribute>
+                <field_attribute>
+                  <attribute name="msee:det.type" value="the"/>
+                  <attribute name="msee:det.id" value="the1002"/>
+                </field_attribute>
+              </node>
+            </node>
+          </node>
+          <node name="Amod(msee:object,msee:null)">
+            <production name="Amod(msee:object,msee:null) -- Amod_S(msee:object,msee:null)"/>
+            <attribute name="msee:object.type" value="Sleeve"/>
+            <attribute name="msee:object.id" value="sleeve1004"/>
+            <attribute name="msee:direction.value" value="right"/>
+            <attribute name="msee:direction.id" value="right1003"/>
+            <field_attribute/>
+            <field_attribute/>
+            <node name="Amod_S(msee:object,msee:null)">
+              <production name="Amod_S(msee:object,msee:null) -- Amod_S(msee:object,msee:direction)"/>
+              <attribute name="msee:object.type" value="Sleeve"/>
+              <attribute name="msee:object.id" value="sleeve1004"/>
+              <attribute name="msee:direction.value" value="right"/>
+              <attribute name="msee:direction.id" value="right1003"/>
+              <field_attribute/>
+              <field_attribute/>
+              <node name="Amod_S(msee:object,msee:direction)">
+                <production name="Amod_S(msee:object,msee:direction) -- AmodPos(msee:object,msee:direction)"/>
+                <attribute name="msee:object.type" value="Sleeve"/>
+                <attribute name="msee:object.id" value="sleeve1004"/>
+                <attribute name="msee:direction.value" value="right"/>
+                <attribute name="msee:direction.id" value="right1003"/>
+                <field_attribute/>
+                <field_attribute/>
+                <node name="AmodPos(msee:object,msee:direction)">
+                  <production name="AmodPos(msee:object,msee:direction) -- amod(msee:object,msee:direction)"/>
+                  <attribute name="msee:object.type" value="Sleeve"/>
+                  <attribute name="msee:object.id" value="sleeve1004"/>
+                  <attribute name="msee:direction.value" value="right"/>
+                  <attribute name="msee:direction.id" value="right1003"/>
+                  <field_attribute/>
+                  <field_attribute/>
+                  <node name="amod(msee:object,msee:direction)">
+                    <attribute name="msee:object.type" value="Sleeve"/>
+                    <attribute name="msee:object.id" value="sleeve1004"/>
+                    <attribute name="msee:direction.value" value="right"/>
+                    <attribute name="msee:direction.id" value="right1003"/>
+                    <field_attribute>
+                      <attribute name="msee:object.type" value="Sleeve"/>
+                      <attribute name="msee:object.id" value="sleeve1004"/>
+                    </field_attribute>
+                    <field_attribute>
+                      <attribute name="msee:direction.value" value="right"/>
+                      <attribute name="msee:direction.id" value="right1003"/>
+                    </field_attribute>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node name="Object_S(msee:event,msee:object)">
+            <production name="Object_S(msee:event,msee:object) -- Dobj(msee:event,msee:object)"/>
+            <attribute name="msee:object.type" value="Sleeve"/>
+            <attribute name="msee:object.id" value="sleeve1004"/>
+            <attribute name="msee:event.type" value="fold"/>
+            <attribute name="msee:event.id" value="Fold1001"/>
+            <field_attribute/>
+            <field_attribute/>
+            <node name="Dobj(msee:event,msee:object)">
+              <production name="Dobj(msee:event,msee:object) -- DobjPos(msee:event,msee:object)"/>
+              <attribute name="msee:event.type" value="fold"/>
+              <attribute name="msee:event.id" value="Fold1001"/>
+              <attribute name="msee:object.type" value="Sleeve"/>
+              <attribute name="msee:object.id" value="sleeve1004"/>
+              <field_attribute/>
+              <field_attribute/>
+              <node name="DobjPos(msee:event,msee:object)">
+                <production name="DobjPos(msee:event,msee:object) -- dobj(msee:event,msee:object)"/>
+                <attribute name="msee:event.type" value="fold"/>
+                <attribute name="msee:event.id" value="Fold1001"/>
+                <attribute name="msee:object.type" value="Sleeve"/>
+                <attribute name="msee:object.id" value="sleeve1004"/>
+                <field_attribute/>
+                <field_attribute/>
+                <node name="dobj(msee:event,msee:object)">
+                  <attribute name="msee:event.type" value="fold"/>
+                  <attribute name="msee:event.id" value="Fold1001"/>
+                  <attribute name="msee:object.type" value="Sleeve"/>
+                  <attribute name="msee:object.id" value="sleeve1004"/>
+                  <field_attribute>
+                    <attribute name="msee:event.type" value="fold"/>
+                    <attribute name="msee:event.id" value="Fold1001"/>
+                  </field_attribute>
+                  <field_attribute>
+                    <attribute name="msee:object.type" value="Sleeve"/>
+                    <attribute name="msee:object.id" value="sleeve1004"/>
+                  </field_attribute>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node name="Preposition_P(msee:null,msee:null)">
+          <production name="Preposition_P(msee:null,msee:null) -- Preposition(msee:null,msee:null)"/>
+          <attribute name="msee:object.type" value="Position"/>
+          <attribute name="msee:object.id" value="left1007"/>
+          <attribute name="msee:event.type" value="fold"/>
+          <attribute name="msee:event.id" value="Fold1001"/>
+          <field_attribute/>
+          <field_attribute/>
+          <node name="Preposition(msee:null,msee:null)">
+            <production name="Preposition(msee:null,msee:null) -- Preposition(msee:event,msee:object)"/>
+            <attribute name="msee:object.type" value="Position"/>
+            <attribute name="msee:object.id" value="left1007"/>
+            <attribute name="msee:event.type" value="fold"/>
+            <attribute name="msee:event.id" value="Fold1001"/>
+            <field_attribute/>
+            <field_attribute/>
+            <node name="Preposition(msee:event,msee:object)">
+              <production name="Preposition(msee:event,msee:object) -- Det(msee:object,msee:det) Preposition_S(msee:event,msee:object)"/>
+              <attribute name="msee:object.type" value="Position"/>
+              <attribute name="msee:object.id" value="left1007"/>
+              <attribute name="msee:event.type" value="fold"/>
+              <attribute name="msee:event.id" value="Fold1001"/>
+              <field_attribute/>
+              <field_attribute/>
+              <node name="Det(msee:object,msee:det)">
+                <production name="Det(msee:object,msee:det) -- DetPos(msee:object,msee:det)"/>
+                <attribute name="msee:object.type" value="Position"/>
+                <attribute name="msee:object.id" value="left1007"/>
+                <attribute name="msee:det.type" value="the"/>
+                <attribute name="msee:det.id" value="the1006"/>
+                <field_attribute/>
+                <field_attribute/>
+                <node name="DetPos(msee:object,msee:det)">
+                  <production name="DetPos(msee:object,msee:det) -- det(msee:object,msee:det)"/>
+                  <attribute name="msee:object.type" value="Position"/>
+                  <attribute name="msee:object.id" value="left1007"/>
+                  <attribute name="msee:det.type" value="the"/>
+                  <attribute name="msee:det.id" value="the1006"/>
+                  <field_attribute/>
+                  <field_attribute/>
+                  <node name="det(msee:object,msee:det)">
+                    <attribute name="msee:object.type" value="Position"/>
+                    <attribute name="msee:object.id" value="left1007"/>
+                    <attribute name="msee:det.type" value="the"/>
+                    <attribute name="msee:det.id" value="the1006"/>
+                    <field_attribute>
+                      <attribute name="msee:object.type" value="Position"/>
+                      <attribute name="msee:object.id" value="left1007"/>
+                    </field_attribute>
+                    <field_attribute>
+                      <attribute name="msee:det.type" value="the"/>
+                      <attribute name="msee:det.id" value="the1006"/>
+                    </field_attribute>
+                  </node>
+                </node>
+              </node>
+              <node name="Preposition_S(msee:event,msee:object)">
+                <production name="Preposition_S(msee:event,msee:object) -- Prep_to(msee:event,msee:object)"/>
+                <attribute name="msee:event.type" value="fold"/>
+                <attribute name="msee:event.id" value="Fold1001"/>
+                <attribute name="msee:object.type" value="Position"/>
+                <attribute name="msee:object.id" value="left1007"/>
+                <field_attribute/>
+                <field_attribute/>
+                <node name="Prep_to(msee:event,msee:object)">
+                  <production name="Prep_to(msee:event,msee:object) -- Prep_toPos(msee:event,msee:object)"/>
+                  <attribute name="msee:event.type" value="fold"/>
+                  <attribute name="msee:event.id" value="Fold1001"/>
+                  <attribute name="msee:object.type" value="Position"/>
+                  <attribute name="msee:object.id" value="left1007"/>
+                  <field_attribute/>
+                  <field_attribute/>
+                  <node name="Prep_toPos(msee:event,msee:object)">
+                    <production name="Prep_toPos(msee:event,msee:object) -- prep_to(msee:event,msee:object)"/>
+                    <attribute name="msee:event.type" value="fold"/>
+                    <attribute name="msee:event.id" value="Fold1001"/>
+                    <attribute name="msee:object.type" value="Position"/>
+                    <attribute name="msee:object.id" value="left1007"/>
+                    <field_attribute/>
+                    <field_attribute/>
+                    <node name="prep_to(msee:event,msee:object)">
+                      <attribute name="msee:event.type" value="fold"/>
+                      <attribute name="msee:event.id" value="Fold1001"/>
+                      <attribute name="msee:object.type" value="Position"/>
+                      <attribute name="msee:object.id" value="left1007"/>
+                      <field_attribute>
+                        <attribute name="msee:event.type" value="fold"/>
+                        <attribute name="msee:event.id" value="Fold1001"/>
+                      </field_attribute>
+                      <field_attribute>
+                        <attribute name="msee:object.type" value="Position"/>
+                        <attribute name="msee:object.id" value="left1007"/>
+                      </field_attribute>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</root>

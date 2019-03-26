@@ -1,0 +1,9 @@
+PREFIX msee:      <http://msee/ontology/msee.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?event_type ?doing2004 
+WHERE{ 	?he2003 rdf:type msee:Human.
+	?doing2004 rdf:type msee:Event_type.
+	?doing2004 msee:hasAgent ?he2003.
+
+}
